@@ -3,24 +3,91 @@
 <head>
     <meta charset="utf-8">
     <title>Unit-1</title>
-    <link rel="stylesheet" href="style.scss"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script type="text/javascript" src="js/jquery-3.5.0.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
 </head>
 <body>
-<header>
+<header class="menu-nav">
     <div class="container">
         <nav class="menu">
-            <div class="menu__logo">
 
-            </div>
             <ul class="menu__list">
+                <li class="menu__item">
+                    <div class="menu__logo">
+                        <svg viewBox="0 0 50 51" xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href="img/Logo.svg#logo"/>
+                        </svg>
+                    </div>
+                </li>
                 <li class="menu__item">HEADPHONES<a class="menu__link" href=""></a></li>
                 <li class="menu__item">EARPHONES<a class="menu__link" href=""></a></li>
                 <li class="menu__item">SPEAKERS<a class="menu__link" href=""></a></li>
                 <li class="menu__item">EXPLORE<a class="menu__link" href=""></a></li>
+                <li class="menu__item">
+                    <div class="btn__holder">
+                        <div class="btn__holder_item btn__holder_search">
+                            <svg viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/search.svg#search"/>
+                            </svg>
+                        </div>
+                        <div class="btn__holder_item btn__holder_user">
+                            <svg viewBox="0 0 27 27" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/user.svg#user"/>
+                            </svg>
+
+                        </div>
+                        <div class="btn__holder_item btn__holder_bucket">
+                            <svg viewBox="0 0 27 25" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/bucket.svg#bucket"/>
+                            </svg>
+                        </div>
+                    </div>
+                </li>
             </ul>
+
         </nav>
     </div>
 </header>
+
+<section>
+    <div class="section__first">
+        <div class="container">
+            <div class="section__first_image_block">
+                <div class="section__first_image_block_wrapper">
+                    <img src="img/headphones.png" alt="">
+                </div>
+            </div>
+            <div class="section__first_content-box ">
+                <div class="section__first_content-box_inner">
+                    <div class="section__first_content-box_description">
+                        Beats Studio3 Wireless
+                    </div>
+                    <h1 class="section__first_content-box_title">
+                        Experience your<br>
+                        music like never before.
+                    </h1>
+                    <div class="section__first_content-box_action-wrapper">
+                        <div class="section__first_content-box_price">
+                            $299.95
+                        </div>
+                        <a href="#" class="section__first_content-box_action-button">
+                            BUY NOW
+                        </a>
+                    </div>
+                    <div class="section__first_content-box_gift">
+                        $60 Apple Music gift card with purchase of select Beats products.*
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
 </body>
 </html>
