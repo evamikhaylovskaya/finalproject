@@ -4,52 +4,79 @@
     <meta charset="utf-8">
     <title>Unit-1</title>
     <link rel="stylesheet" href="css/style.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-          rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <script type="text/javascript" src="js/jquery-3.5.0.min.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
-<header class="menu-nav">
+<header class="menu-nav" id="header">
     <div class="container">
         <nav class="menu">
 
             <ul class="menu__list">
-                <li class="menu__item">
+                <li class="menu__item menu__item__mobile">
                     <div class="menu__logo">
                         <svg viewBox="0 0 50 51" xmlns="http://www.w3.org/2000/svg">
                             <use xlink:href="img/Logo.svg#logo"/>
                         </svg>
                     </div>
                 </li>
-                <li class="menu__item">HEADPHONES<a class="menu__link" href=""></a></li>
-                <li class="menu__item">EARPHONES<a class="menu__link" href=""></a></li>
-                <li class="menu__item">SPEAKERS<a class="menu__link" href=""></a></li>
-                <li class="menu__item">EXPLORE<a class="menu__link" href=""></a></li>
+                <li class="menu__item"><a class="menu__link" href="#">HEADPHONES</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">EARPHONES</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">SPEAKERS</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">EXPLORE</a></li>
                 <li class="menu__item">
                     <div class="btn__holder">
                         <div class="btn__holder_item btn__holder_search">
-                            <svg viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="img/search.svg#search"/>
-                            </svg>
+                            <a class="icon-link" href="#">
+                                <svg viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/search.svg#search"/>
+                                </svg>
+                            </a>
                         </div>
                         <div class="btn__holder_item btn__holder_user">
-                            <svg viewBox="0 0 27 27" xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="img/user.svg#user"/>
-                            </svg>
-
+                            <a class="icon-link" href="#">
+                                <svg viewBox="0 0 27 27" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/user.svg#user"/>
+                                </svg>
+                            </a>
                         </div>
                         <div class="btn__holder_item btn__holder_bucket">
-                            <svg viewBox="0 0 27 25" xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="img/bucket.svg#bucket"/>
-                            </svg>
+                            <a class="icon-link" href="#">
+                                <svg viewBox="0 0 27 25" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/bucket.svg#bucket"/>
+                                </svg>
+                            </a>
                         </div>
+                    </div>
+                </li>
+                <li class="menu__item menu__item__mobile menu__item__mobile__burger">
+                    <div class="menu__item__mobile__burger__element" id="mobile-menu-button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
                 </li>
             </ul>
 
         </nav>
+        <nav class="mobile-menu" id="mobile-menu">
+            <svg class="close-button" id="close-button" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/close-buton.svg#close-button"/>
+            </svg>
+            <hr>
+            <ul class="mobile-menu__list">
+                <li class="menu__item"><a class="menu__link" href="#">HEADPHONES</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">EARPHONES</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">SPEAKERS</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">EXPLORE</a></li>
+            </ul>
+        </nav>
+
     </div>
 </header>
 
@@ -139,8 +166,352 @@
             </div>
         </div>
     </div>
+
+    <div class="section__third">
+        <div class="container">
+            <div class="section__third_image_block">
+                <div class="section__third_image_block_wrapper">
+                    <img src="img/powerbeats.png" alt="">
+                </div>
+            </div>
+            <div class="section__third_content-box ">
+                <div class="section__third_content-box_inner">
+                    <div class="section__third_content-box_description">
+                        Totally wireless high-performance earphones
+                    </div>
+                    <h1 class="section__third_content-box_title">
+                        Powerbeats Pro
+                    </h1>
+                    <div class="section__third_content-box_title-description">
+                        Up to 9 hours of listening time<br>
+                        Apple H1 Chip & Class 1 Wireless Bluetooth®<br>
+                        Sweat & water resistant<br>
+                        Adjustable, secure-fit earhooks<br>
+                    </div>
+                    <div class="section__third_content-box_action-wrapper">
+                        <div class="section__third_content-box_price">
+                            $199.95
+                        </div>
+                        <a href="#" class="section__third_content-box_action-button">
+                            BUY NOW
+                        </a>
+                    </div>
+                    <div class="section__third_content-box_gift">
+                        $60 Apple Music gift card with purchase of select Beats products.*
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section__fourth">
+        <div class="container">
+            <div class="section__fourth_content-box">
+                <div class="section__fourth_content-box_inner">
+                    <div class="section__fourth_content-box_description">
+                        Talk. Listen. Beats.
+                    </div>
+                    <h1 class="section__fourth_content-box_title">
+                        Beats
+                        <div class="section__fourth_content-box_title_x">
+                            x
+                        </div>
+                    </h1>
+                    <div class="section__fourth_content-box_title-description">
+                        Up to 8 hours of battery life<br>
+                        With Fast Fuel, a 5-minute charge = 2 hours of playback<br>
+                        Sweat & water resistant<br>
+                        Apple W1 Chip & Class 1 Wireless Bluetooth®<br>
+                    </div>
+                    <div class="section__fourth_content-box_action-wrapper">
+                        <div class="section__fourth_content-box_price">
+                            $199.95
+                        </div>
+                        <a href="#" class="section__fourth_content-box_action-button">
+                            BUY NOW
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="section__section_image_block">
+                <div class="section__second_image_block_wrapper">
+                    <img src="img/beats-x.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section__fifth">
+        <div class="container">
+
+            <div class="card">
+                <div class="card__block">
+                    <div class="card__block_img">
+                        <img src="img/beats1.png" alt="">
+                    </div>
+                    <div class="card__block_title">
+                        Beatsˣ
+                    </div>
+                    <div class="card__block_description">
+                        Up to 8 hours of battery life<br>
+                        With Fast Fuel, a 5-minute charge = 2<br>
+                        hours of playback
+                    </div>
+
+                    <div class="card__block_action-wrapper">
+                        <div class="card__block_price">
+                            $299.95
+                        </div>
+                        <a href="#" class="card__block_button">
+                            BUY NOW
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__block">
+                    <div class="card__block_img">
+                        <div class="card__block_img_beats-2">
+
+                            <img src="img/beats5.png" alt="">
+                        </div>
+                    </div>
+                    <div class="card__block_title">
+                        Beatsˣ
+                    </div>
+                    <div class="card__block_description">
+                        Up to 8 hours of battery life<br>
+                        With Fast Fuel, a 5-minute charge = 2<br>
+                        hours of playback
+                    </div>
+
+                    <div class="card__block_action-wrapper">
+                        <div class="card__block_price">
+                            $199.95
+                        </div>
+                        <a href="#" class="card__block_button">
+                            BUY NOW
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__block">
+                    <div class="card__block_img">
+                        <img src="img/beats3.png" alt="">
+                    </div>
+                    <div class="card__block_title">
+                        Beatsˣ
+                    </div>
+                    <div class="card__block_description">
+                        Up to 8 hours of battery life<br>
+                        With Fast Fuel, a 5-minute charge = 2<br>
+                        hours of playback
+                    </div>
+
+                    <div class="card__block_action-wrapper">
+                        <div class="card__block_price">
+                            $199.95
+                        </div>
+                        <a href="#" class="card__block_button">
+                            BUY NOW
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__block">
+                    <div class="card__block_img">
+                        <img src="img/beats4.png" alt="">
+                    </div>
+                    <div class="card__block_title">
+                        Beatsˣ
+                    </div>
+                    <div class="card__block_description">
+                        Up to 8 hours of battery life<br>
+                        With Fast Fuel, a 5-minute charge = 2<br>
+                        hours of playback
+                    </div>
+
+                    <div class="card__block_action-wrapper">
+                        <div class="card__block_price">
+                            $999.95
+                        </div>
+                        <a href="#" class="card__block_button">
+                            BUY NOW
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__block">
+                    <div class="card__block_img">
+                        <img src="img/beats5.png" alt="">
+                    </div>
+                    <div class="card__block_title">
+                        Beatsˣ
+                    </div>
+                    <div class="card__block_description">
+                        Up to 8 hours of battery life<br>
+                        With Fast Fuel, a 5-minute charge = 2<br>
+                        hours of playback
+                    </div>
+
+                    <div class="card__block_action-wrapper">
+                        <div class="card__block_price">
+                            $99.95
+                        </div>
+                        <a href="#" class="card__block_button">
+                            BUY NOW
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card__block">
+                    <div class="card__block_img">
+                        <img src="img/beats6.png" alt="">
+                    </div>
+                    <div class="card__block_title">
+                        Beatsˣ
+                    </div>
+                    <div class="card__block_description">
+                        Up to 8 hours of battery life<br>
+                        With Fast Fuel, a 5-minute charge = 2<br>
+                        hours of playback
+                    </div>
+
+                    <div class="card__block_action-wrapper">
+                        <div class="card__block_price">
+                            $299.95
+                        </div>
+                        <a href="#" class="card__block_button">
+                            BUY NOW
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
+<section class="form-section">
+    <div class="container">
+        <div class="section__six">
+            <h2 class="section__six_title">
+                Hear it first
+            </h2>
+            <div class="section__six_description">
+                Get updates on product drops, collaborations and all things Beats.
+            </div>
+            <div class="section__six_input">
+                <form action="">
+                    <input type="email" name="email" placeholder="Enter your email" class="section__six_input_email">
+                    <input type="submit" class="section__six_submit-button" value="SIGN UP">
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="footer__logo">
+                    <svg viewBox="0 0 50 51" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="img/Logo.svg#logo"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="col">
+                <h2 class="title">
+                    Products
+                </h2>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li>HEADPHONES</li>
+                        <li>EARPHONES</li>
+                        <li>SPEAKERS</li>
+                        <li>ACCESSORIES</li>
+                        <li>COLLABORATIONS</li>
+                        <li>BEATSAUDIO</li>
+                        <li>SPECIAL OFFERS</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col">
+                <h2 class="title">
+                    Support
+                </h2>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li>PRODUCT HELP</li>
+                        <li>SERVICE & WARRANTY</li>
+                        <li>REGISTER YOUR BEATS</li>
+                        <li>UPDATE YOUR BEATS</li>
+                        <li>AUTHORIZED SERVICE PROVIDERS</li>
+                        <li>CONTACT SUPPORT</li>
+                        <li>INTERNATIONAL NUMBERS</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col">
+                <h2 class="title">
+                    Company
+                </h2>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li>PRODUCT HELP</li>
+                        <li>NEWS AND EVENTS</li>
+                        <li>PROMOTION TERMS</li>
+                        <li>PRIVACY POLICY</li>
+                        <li>TRADEMARK</li>
+                        <li>TERMS OF USE</li>
+                        <li>COOKIESSPECIAL OFFERS</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col">
+                <h2 class="title">Follow Us</h2>
+                <div class="social-wrapper">
+                    <div class="social-wrapper__item">
+                        <a class="icon-link" href="#">
+                            <svg class="instagram-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/instagram.svg#instagram"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="social-wrapper__item">
+                        <a class="icon-link" href="#">
+                            <svg class="facebook-icon" viewBox="0 0 97.75 97.75" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/facebook.svg#facebook"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="social-wrapper__item">
+                        <a class="icon-link" href="#">
+                            <svg class="twitter-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/twitter.svg#twitter"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="social-wrapper__item">
+                        <a class="icon-link" href="#">
+                            <svg class="whatsapp-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/whatsapp.svg#whatsapp"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            Copyright © 2020 Apple Inc. - All rights reserved.
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>
