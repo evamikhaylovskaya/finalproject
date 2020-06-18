@@ -1,0 +1,32 @@
+.item-img__wrapper, .item-product__img-fluid {
+  position: relative;
+  cursor: pointer;
+
+  .action__wrapper {
+    @include position-absolute-full-size;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    opacity: 0;
+    transition: .2s ease-in-out;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    ion-icon {
+      font-size: 24px;
+      padding: 7px;
+      border: 1px solid black;
+      margin: 3px;
+      transition: .2s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        background-color: black;
+        color: white;
+      }
+    }
+  }
+}

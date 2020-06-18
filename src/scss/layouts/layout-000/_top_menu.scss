@@ -1,0 +1,38 @@
+.top-menu {
+  background-color: #000000;
+  color: #cecece;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-style: italic;
+  font-family: Cormorant, serif;
+  font-weight: 500;
+  line-height: 1;
+  padding: 8px 50px;
+
+
+  .email {
+
+    &:hover {
+      color: #ffffff;
+      cursor: pointer;
+    }
+  }
+
+  .login__wrapper {
+    display: flex;
+
+    &:hover {
+      color: #ffffff;
+      cursor: pointer;
+    }
+
+    .icon-text {
+      margin: 0 8px;
+    }
+  }
+
+  .user-icon {
+    width: 10px;
+  }
+}

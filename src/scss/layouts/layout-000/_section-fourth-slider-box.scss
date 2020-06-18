@@ -1,0 +1,88 @@
+.section-fourth {
+  .container {
+    padding: 125px 287px 70px;
+
+    .slider-box {
+      .owl-nav {
+        position: absolute;
+        transform: translate(0, 50%);
+        top: 50%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .owl-prev {
+          background-color: transparent;
+
+          img {
+            position: relative;
+            transition: .3s ease-in-out;
+
+          }
+
+          &:hover img {
+            transform: translateX(-10px);
+          }
+        }
+      }
+
+      .title-area {
+        text-align: center;
+
+        &__shadow-title {
+          @include shadow-title;
+        }
+
+        &__main-title {
+          @include main-title;
+        }
+
+        &__description {
+          @include description;
+        }
+      }
+
+      .text-area {
+        &__wrapper {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          font-family: Lato, sans-serif;
+        }
+
+        &__title {
+          @include title-of-product;
+        }
+
+        &__link {
+          @include link-of-product;
+        }
+
+        &__description {
+          @include description-of-product;
+        }
+
+        &__price {
+          @include price-of-product;
+        }
+
+        &__rate {
+          display: flex;
+
+          @include rate-of-product;
+
+          .star {
+            width: 15px;
+
+            &:hover {
+              fill: #a23636bf;
+            }
+          }
+        }
+      }
+
+
+    }
+  }
+}

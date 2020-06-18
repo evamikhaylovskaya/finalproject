@@ -1,71 +1,75 @@
-@mixin content-box {
-  width: 50%;
-  padding-bottom: 162px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-@mixin description {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 1px;
-}
-
-@mixin title {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 43px;
-}
-
-@mixin titleDescription {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
+@mixin shadow-title{
+  margin: 0 0 5px 10px;
+  font-family: TuesdayNight;
+  font-size: 42px;
   line-height: 27px;
-  color: #030303;
+  font-weight: 400;
+  color: #e5e5e5;
 }
-
-@mixin action-button ($hoverColor:$white, $hoverBgColor:$yellow){
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
-  border: 1px solid;
-  border-radius: 100px;
-  padding: 15px 48px;
-  text-align: center;
+@mixin main-title{
+  font-family: Lato, sans-serif;
+  font-size: 30px;
+  line-height: 1.267em;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 400;
+  margin: 0;
+}
+@mixin description{
+  margin: 3px 0;
+  padding-top: 4px;
+  color: rgb(90, 90, 90);
+  font-family: Cormorant;
+  font-size: 22px;
+  line-height: 1.136em;
+  font-style: italic;
+  letter-spacing: 0;
+  text-transform: none;
+  font-weight: 400;
+}
+@mixin title-of-product{
+  margin: 0;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 1.275px;
+  line-height: 23.001px;
+}
+@mixin link-of-product{
   text-decoration: none;
-  &:hover{
-    background-color: $hoverBgColor;
-    color: $hoverColor;
-  }
+  color: black;
 }
-
-@mixin price {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 40px;
-  line-height: 49px;
-}
-
-@mixin gift {
-  font-style: normal;
+@mixin description-of-product{
+  margin: 2px 0;
+  font-family: Cormorant, serif;
+  font-size: 16px;
+  color: #838383;
   font-weight: 500;
-  font-size: 13px;
-  line-height: 20px;
+  line-height: 23px;
 }
-
-@mixin footer-icon {
-  & svg {
-    width: 32px;
-    height: 32px;
-    fill: $white;
-  }
-  &:hover svg {
-    fill: $yellow;
-  }
+@mixin price-of-product{
+  margin: 4px 0 0;
+  font-family: Cormorant, serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 1.1px;;
+  text-transform: uppercase;
+  color: #000;
+}
+@mixin rate-of-product{
+  cursor: pointer;
+  margin: 11px 3px 2px;
+}
+@mixin position-absolute-full-size{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+@mixin  flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

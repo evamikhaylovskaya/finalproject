@@ -1,0 +1,56 @@
+.section__second {
+  .banner-section {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+cursor: pointer;
+    &__item {
+      width: 25%;
+      max-height: 297px;
+      overflow: hidden;
+      transition: all .2s ease-in-out;
+      position: relative;
+
+      .content {
+        content: '';
+        position: absolute;
+        border: 1px solid #d7d7d7;
+        top: 13px;
+        bottom: 13px;
+        right: 13px;
+        left: 13px;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 27px;
+        .banner-custom-title{
+          font-family: TuesdayNight;
+          font-size: 40px;
+          color: #c4c4c4;
+          margin: 0 -2px -6px;
+
+        }
+        .banner-title{
+          color: #000;
+          font-size: 23px;
+          letter-spacing: .07em;
+          font-family: Lato;
+          text-transform: uppercase;
+        }
+      }
+
+      img {
+        transition: all .5s ease-in-out;
+        width: 100%;
+        max-width: 100%;
+      transform: scale(1.1) translateX(0);
+
+      }
+
+      &:hover img {
+        transform: scale(1.1)  translateX(2%);
+      }
+    }
+  }
+}

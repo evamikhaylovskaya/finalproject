@@ -1,0 +1,43 @@
+.section-video {
+  &__wrapper {
+    position: relative;
+
+    .btn-play-video {
+      @include position-absolute-full-size;
+      @include flex-center;
+
+      .container {
+        .btn-block {
+          width: 50px;
+          height: 50px;
+          border: 1px solid;
+          background-color: black;
+          color: white;
+          font-size: 24px;
+          transition: .3s ease-in-out;
+          cursor: pointer;
+
+          &:hover {
+            background-color: transparent;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}
+
+.video-wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #333333b5;
+  @include flex-center;
+  z-index: 1000;
+
+  .video-box {
+    width: 75%;
+  }
+}

@@ -1,517 +1,638 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Unit-1</title>
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Autoplay usage demo">
+    <meta name="author" content="David Deutsch">
+    <title>
+        Cosmetics Home - Biagiotti
+    </title>
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet"
+          href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+          href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css">
+
+
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- javascript -->
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js"></script>
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cosmetics</title>
+    <link rel="stylesheet" href="css/animate.css"/>
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css">
     <link rel="stylesheet" href="css/style.css"/>
-    <meta name="format-detection" content="telephone=no">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <script type="text/javascript" src="js/jquery-3.5.0.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+
 </head>
 <body>
-<header class="menu-nav" id="header">
+<div class="top-menu">
+    <div class="email">
+        biagiottitheme@gmail.com
+    </div>
+    <div class="description">
+        Free shipping on international orders of $150+
+    </div>
+    <div class="login__wrapper">
+        <div class="icon-text">
+            Log In
+        </div>
+        <div class="icon-user">
+            <svg class="user-icon" viewBox="0 0 448 512">
+                <use xlink:href="img/user-regular.svg#user"/>
+            </svg>
+        </div>
+    </div>
+</div>
+<header class="menu-nav">
     <div class="container">
-        <nav class="menu">
-
-            <ul class="menu__list">
-                <li class="menu__item menu__item__mobile">
-                    <div class="menu__logo">
-                        <svg viewBox="0 0 50 51" xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="img/Logo.svg#logo"/>
+        <div class="nav-bar">
+            <div class="logo-menu__wrapper">
+                <div class="menu-nav__logo">
+                    <a href="#">
+                        <div class="menu-nav__logo_wrapper">
+                            <img src="img/logo.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a class="menu__link" href="#">home</a>
+                        <ul>
+                            <li><a href=""></a>Main Home</li>
+                            <li><a href=""></a>Grid Home</li>
+                            <li><a href=""></a>Cosmetics Home</li>
+                            <li><a href=""></a>Product Gallery</li>
+                            <li><a href=""></a>Fullscreen Slider</li>
+                            <li><a href=""></a>Skincare Home</li>
+                            <li><a href=""></a>Landing</li>
+                        </ul>
+                        </li>
+                        <li class="menu__item"><a class="menu__link" href="#">about us</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">blog</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">shop</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">portfolio</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="icons-wrapper">
+                <div class="menu__icon">
+                    <div class="wishlist">
+                        <svg class="heart-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href="img/heart.svg#heart"/>
                         </svg>
                     </div>
-                </li>
-                <li class="menu__item"><a class="menu__link" href="#">HEADPHONES</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">EARPHONES</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">SPEAKERS</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">EXPLORE</a></li>
-                <li class="menu__item">
-                    <div class="btn__holder">
-                        <div class="btn__holder_item btn__holder_search">
-                            <a class="icon-link" href="#">
-                                <svg viewBox="0 0 25 25" xmlns="http://www.w3.org/2000/svg">
-                                    <use xlink:href="img/search.svg#search"/>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="btn__holder_item btn__holder_user">
-                            <a class="icon-link" href="#">
-                                <svg viewBox="0 0 27 27" xmlns="http://www.w3.org/2000/svg">
-                                    <use xlink:href="img/user.svg#user"/>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="btn__holder_item btn__holder_bucket">
-                            <a class="icon-link" href="#">
-                                <svg viewBox="0 0 27 25" xmlns="http://www.w3.org/2000/svg">
-                                    <use xlink:href="img/bucket.svg#bucket"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </li>
-                <li class="menu__item menu__item__mobile menu__item__mobile__burger">
-                    <div class="menu__item__mobile__burger__element" id="mobile-menu-button">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </li>
-            </ul>
+                    <div class="menu__icon_text">Wishlist</div>
 
-        </nav>
-        <nav class="mobile-menu" id="mobile-menu">
-            <svg class="close-button" id="close-button" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                <use xlink:href="img/close-buton.svg#close-button"/>
-            </svg>
-            <hr>
-            <ul class="mobile-menu__list">
-                <li class="menu__item"><a class="menu__link" href="#">HEADPHONES</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">EARPHONES</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">SPEAKERS</a></li>
-                <li class="menu__item"><a class="menu__link" href="#">EXPLORE</a></li>
-            </ul>
-        </nav>
-
-    </div>
-</header>
-
-<section>
-    <div class="section__first">
-        <div class="container">
-            <div class="section__first_image_block">
-                <div class="section__first_image_block_wrapper">
-                    <img src="img/headphones.png" alt="">
                 </div>
-            </div>
-            <div class="section__first_content-box ">
-                <div class="section__first_content-box_inner">
-                    <div class="section__first_content-box_description">
-                        Beats Studio3 Wireless
-                    </div>
-                    <h1 class="section__first_content-box_title">
-                        Experience your<br>
-                        music like never before.
-                    </h1>
-                    <div class="section__first_content-box_action-wrapper">
-                        <div class="section__first_content-box_price">
-                            $299.95
-                        </div>
-                        <a href="#" class="section__first_content-box_action-button">
-                            BUY NOW
-                        </a>
-                    </div>
-                    <div class="section__first_content-box_gift">
-                        $60 Apple Music gift card with purchase of select Beats products.*
-                    </div>
+
+
+                <div class="menu__icon">
+                    <svg class="search-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="img/search.svg#search"/>
+                    </svg>
                 </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="section__second">
-        <div class="container">
-            <div class="section__second_content-box">
-                <div class="section__second_content-box_inner">
-                    <div class="section__second_content-box_description">
-                        Portable Wireless Speaker
-                    </div>
-                    <h1 class="section__second_content-box_title">
-                        Beats Pill
-                        <div class="section__second_content-box_title_plus">
-                            +
-                        </div>
-                    </h1>
-
-                    <div class="section__second_content-box_available-colors">
-                        Available Colors
-                    </div>
-                    <div class="section__second_content-box_find-color">
-                        Find your Color
-                    </div>
-                    <div class="section__second_content-box_color-button">
-                        <ul class="color-wrapper">
-                            <li class="item__color active">
-                                <div class="inner white"></div>
-                            </li>
-                            <li class="item__color active ">
-                                <div class="inner pink"></div>
-                            </li>
-                            <li class="item__color active ">
-                                <div class="inner black"></div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="section__second_content-box_action-wrapper">
-                        <div class="section__second_content-box_price">
-                            $299.95
-                        </div>
-                        <a href="#" class="section__second_content-box_action-button">
-                            BUY NOW
-                        </a>
-                    </div>
-                    <div class="section__second_content-box_gift">
-                        $60 Apple Music gift card with purchase of select Beats products.*
-                    </div>
+                <div class="menu__icon">
+                    <svg class="shopping-bag-icon" viewBox="-35 0 512 512.00102" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="img/shopping-bag.svg#shopping-bag"/>
+                    </svg>
                 </div>
-            </div>
-            <div class="section__section_image_block">
-                <div class="section__second_image_block_wrapper">
-                    <img src="img/speaker.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="section__third">
-        <div class="container">
-            <div class="section__third_image_block">
-                <div class="section__third_image_block_wrapper">
-                    <img src="img/powerbeats.png" alt="">
-                </div>
-            </div>
-            <div class="section__third_content-box ">
-                <div class="section__third_content-box_inner">
-                    <div class="section__third_content-box_description">
-                        Totally wireless high-performance earphones
-                    </div>
-                    <h1 class="section__third_content-box_title">
-                        Powerbeats Pro
-                    </h1>
-                    <div class="section__third_content-box_title-description">
-                        Up to 9 hours of listening time<br>
-                        Apple H1 Chip & Class 1 Wireless Bluetooth®<br>
-                        Sweat & water resistant<br>
-                        Adjustable, secure-fit earhooks<br>
-                    </div>
-                    <div class="section__third_content-box_action-wrapper">
-                        <div class="section__third_content-box_price">
-                            $199.95
-                        </div>
-                        <a href="#" class="section__third_content-box_action-button">
-                            BUY NOW
-                        </a>
-                    </div>
-                    <div class="section__third_content-box_gift">
-                        $60 Apple Music gift card with purchase of select Beats products.*
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="section__fourth">
-        <div class="container">
-            <div class="section__fourth_content-box">
-                <div class="section__fourth_content-box_inner">
-                    <div class="section__fourth_content-box_description">
-                        Talk. Listen. Beats.
-                    </div>
-                    <h1 class="section__fourth_content-box_title">
-                        Beats
-                        <div class="section__fourth_content-box_title_x">
-                            x
-                        </div>
-                    </h1>
-                    <div class="section__fourth_content-box_title-description">
-                        Up to 8 hours of battery life<br>
-                        With Fast Fuel, a 5-minute charge = 2 hours of playback<br>
-                        Sweat & water resistant<br>
-                        Apple W1 Chip & Class 1 Wireless Bluetooth®<br>
-                    </div>
-                    <div class="section__fourth_content-box_action-wrapper">
-                        <div class="section__fourth_content-box_price">
-                            $199.95
-                        </div>
-                        <a href="#" class="section__fourth_content-box_action-button">
-                            BUY NOW
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="section__section_image_block">
-                <div class="section__second_image_block_wrapper">
-                    <img src="img/beats-x.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="section__fifth">
-        <div class="container">
-
-            <div class="card">
-                <div class="card__block">
-                    <div class="card__block_img">
-                        <img src="img/beats1.png" alt="">
-                    </div>
-                    <div class="card__block_title">
-                        Beatsˣ
-                    </div>
-                    <div class="card__block_description">
-                        Up to 8 hours of battery life<br>
-                        With Fast Fuel, a 5-minute charge = 2<br>
-                        hours of playback
-                    </div>
-
-                    <div class="card__block_action-wrapper">
-                        <div class="card__block_price">
-                            $299.95
-                        </div>
-                        <a href="#" class="card__block_button">
-                            BUY NOW
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card__block">
-                    <div class="card__block_img">
-                        <div class="card__block_img_beats-2">
-
-                            <img src="img/beats5.png" alt="">
-                        </div>
-                    </div>
-                    <div class="card__block_title">
-                        Beatsˣ
-                    </div>
-                    <div class="card__block_description">
-                        Up to 8 hours of battery life<br>
-                        With Fast Fuel, a 5-minute charge = 2<br>
-                        hours of playback
-                    </div>
-
-                    <div class="card__block_action-wrapper">
-                        <div class="card__block_price">
-                            $199.95
-                        </div>
-                        <a href="#" class="card__block_button">
-                            BUY NOW
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card__block">
-                    <div class="card__block_img">
-                        <img src="img/beats3.png" alt="">
-                    </div>
-                    <div class="card__block_title">
-                        Beatsˣ
-                    </div>
-                    <div class="card__block_description">
-                        Up to 8 hours of battery life<br>
-                        With Fast Fuel, a 5-minute charge = 2<br>
-                        hours of playback
-                    </div>
-
-                    <div class="card__block_action-wrapper">
-                        <div class="card__block_price">
-                            $199.95
-                        </div>
-                        <a href="#" class="card__block_button">
-                            BUY NOW
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card__block">
-                    <div class="card__block_img">
-                        <img src="img/beats4.png" alt="">
-                    </div>
-                    <div class="card__block_title">
-                        Beatsˣ
-                    </div>
-                    <div class="card__block_description">
-                        Up to 8 hours of battery life<br>
-                        With Fast Fuel, a 5-minute charge = 2<br>
-                        hours of playback
-                    </div>
-
-                    <div class="card__block_action-wrapper">
-                        <div class="card__block_price">
-                            $999.95
-                        </div>
-                        <a href="#" class="card__block_button">
-                            BUY NOW
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card__block">
-                    <div class="card__block_img">
-                        <img src="img/beats5.png" alt="">
-                    </div>
-                    <div class="card__block_title">
-                        Beatsˣ
-                    </div>
-                    <div class="card__block_description">
-                        Up to 8 hours of battery life<br>
-                        With Fast Fuel, a 5-minute charge = 2<br>
-                        hours of playback
-                    </div>
-
-                    <div class="card__block_action-wrapper">
-                        <div class="card__block_price">
-                            $99.95
-                        </div>
-                        <a href="#" class="card__block_button">
-                            BUY NOW
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card__block">
-                    <div class="card__block_img">
-                        <img src="img/beats6.png" alt="">
-                    </div>
-                    <div class="card__block_title">
-                        Beatsˣ
-                    </div>
-                    <div class="card__block_description">
-                        Up to 8 hours of battery life<br>
-                        With Fast Fuel, a 5-minute charge = 2<br>
-                        hours of playback
-                    </div>
-
-                    <div class="card__block_action-wrapper">
-                        <div class="card__block_price">
-                            $299.95
-                        </div>
-                        <a href="#" class="card__block_button">
-                            BUY NOW
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="form-section">
-    <div class="container">
-        <div class="section__six">
-            <h2 class="section__six_title">
-                Hear it first
-            </h2>
-            <div class="section__six_description">
-                Get updates on product drops, collaborations and all things Beats.
-            </div>
-            <div class="section__six_input">
-                <form action="">
-                    <input type="email" name="email" placeholder="Enter your email" class="section__six_input_email">
-                    <input type="submit" class="section__six_submit-button" value="SIGN UP">
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
-
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <div class="footer__logo">
-                    <svg viewBox="0 0 50 51" xmlns="http://www.w3.org/2000/svg">
-                        <use xlink:href="img/Logo.svg#logo"/>
+                <div id="burger-menu" class="burger-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                         x="0px" y="0px" width="50px" height="20px" viewBox="0 0 50 20"
+                         enable-background="new 0 0 50 20" xml:space="preserve">
+                        <rect x="5" y="3" width="40" height="1"></rect>
+                        <rect x="5" y="10" width="40" height="1"></rect>
+                        <rect x="5" y="17" width="40" height="1"></rect>
                     </svg>
                 </div>
             </div>
-            <div class="col">
-                <h2 class="title">
-                    Products
-                </h2>
-                <nav class="nav">
-                    <ul class="nav__list">
-                        <li>HEADPHONES</li>
-                        <li>EARPHONES</li>
-                        <li>SPEAKERS</li>
-                        <li>ACCESSORIES</li>
-                        <li>COLLABORATIONS</li>
-                        <li>BEATSAUDIO</li>
-                        <li>SPECIAL OFFERS</li>
-                    </ul>
-                </nav>
+        </div>
+    </div>
+</header>
+<div class="section__first">
+    <div id="left-carousel" class="owl-carousel owl-theme">
+        <div class="slide-box">
+            <figure>
+                <img class=" img-fluid" src="img/home-img1.jpg" alt="">
+            </figure>
+        </div>
+        <div class="slide-box">
+            <figure>
+                <img class=" img-fluid" src="img/home-img2.jpg" alt="">
+            </figure>
+        </div>
+    </div>
+    <div id="right-carousel" class="owl-carousel owl-theme">
+        <div class="slide-box">
+            <figure>
+                <img class=" img-fluid" src="img/home-img3.jpg" alt="">
+            </figure>
+        </div>
+        <div class="slide-box">
+            <figure>
+                <img class=" img-fluid" src="img/home-img4.jpg" alt="">
+            </figure>
+        </div>
+    </div>
+    <div class="overlay-center">
+        <h1 class="title-slider">
+            brand new look
+        </h1>
+        <div class="btn-black">
+            find beauty
+        </div>
+    </div>
+</div>
+<div class="section__second">
+    <div class="banner-section">
+        <div class="banner-section__item">
+            <img src="img/banner1.jpg" alt="">
+            <div class="content">
+                <div class="banner-custom-title">
+                    Perfect
+                </div>
+                <div class="banner-title">
+                    foundation
+                </div>
             </div>
-            <div class="col">
-                <h2 class="title">
-                    Support
-                </h2>
-                <nav class="nav">
-                    <ul class="nav__list">
-                        <li>PRODUCT HELP</li>
-                        <li>SERVICE & WARRANTY</li>
-                        <li>REGISTER YOUR BEATS</li>
-                        <li>UPDATE YOUR BEATS</li>
-                        <li>AUTHORIZED SERVICE PROVIDERS</li>
-                        <li>CONTACT SUPPORT</li>
-                        <li>INTERNATIONAL NUMBERS</li>
-                    </ul>
-                </nav>
+        </div>
+        <div class="banner-section__item">
+            <img src="img/banner2.jpg" alt="">
+            <div class="content">
+                <div class="banner-custom-title">
+                    Organic
+                </div>
+                <div class="banner-title">
+                    Body Oil
+                </div>
             </div>
-            <div class="col">
-                <h2 class="title">
-                    Company
-                </h2>
-                <nav class="nav">
-                    <ul class="nav__list">
-                        <li>PRODUCT HELP</li>
-                        <li>NEWS AND EVENTS</li>
-                        <li>PROMOTION TERMS</li>
-                        <li>PRIVACY POLICY</li>
-                        <li>TRADEMARK</li>
-                        <li>TERMS OF USE</li>
-                        <li>COOKIESSPECIAL OFFERS</li>
-                    </ul>
-                </nav>
+        </div>
+        <div class="banner-section__item">
+            <img src="img/banner3.jpg" alt="">
+            <div class="content">
+                <div class="banner-custom-title">
+                    Must have
+                </div>
+                <div class="banner-title">
+                    make up
+                </div>
             </div>
-            <div class="col">
-                <h2 class="title">Follow Us</h2>
-                <div class="social-wrapper">
-                    <div class="social-wrapper__item">
-                        <a class="icon-link" href="#">
-                            <svg class="instagram-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="img/instagram.svg#instagram"/>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="social-wrapper__item">
-                        <a class="icon-link" href="#">
-                            <svg class="facebook-icon" viewBox="0 0 97.75 97.75" xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="img/facebook.svg#facebook"/>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="social-wrapper__item">
-                        <a class="icon-link" href="#">
-                            <svg class="twitter-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="img/twitter.svg#twitter"/>
-                            </svg>
-                        </a>
-                    </div>
-                    <div class="social-wrapper__item">
-                        <a class="icon-link" href="#">
-                            <svg class="whatsapp-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                                <use xlink:href="img/whatsapp.svg#whatsapp"/>
-                            </svg>
-                        </a>
+        </div>
+        <div class="banner-section__item">
+            <img src="img/banner4.jpg" alt="">
+            <div class="content">
+                <div class="banner-custom-title">
+                    Organic
+                </div>
+                <div class="banner-title">
+                    Body Oil
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section-three">
+    <div class="container">
+        <div class="collection">
+            <div class="collection__title_shadow">
+                perfect shades
+            </div>
+            <h2 class="collection__title">
+                PICKS FROM OUR COLLECTION
+            </h2>
+            <h5 class="collection__title_description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </h5>
+        </div>
+        <div class="collection__wrapper">
+            <div class="img-block">
+                <img class="img-block__fluid" src="img/collection-img.jpg" alt="">
+            </div>
+            <div class="product">
+                <div class="grid-container">
+                    <div class="item-product">
+                        <div class="item-product__wrapper">
+                            <div class="item-product__img-fluid">
+                                <img src="img/new-featured-home-3-img-1.jpg" alt="">
+                            </div>
+                            <div class="item-product__text">
+                                <h4 class="item-product__title">
+                                    <a class="item-product__link"
+                                       href="https://biagiotti.qodeinteractive.com/product-category/body-oil/">
+                                        CREME Z
+                                    </a>
+                                </h4>
+
+                                <div class="item-product__description"><a
+                                        href="https://biagiotti.qodeinteractive.com/product-category/body-oil/"></a>
+                                    Body Oil
+                                </div>
+                                <div class="item-product__price">$46.00</div>
+                                <div class="item-product__rate">
+                                    <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="img/star-sharp.svg#star"/>
+                                    </svg>
+                                    <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="img/star-sharp.svg#star"/>
+                                    </svg>
+                                    <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="img/star-sharp.svg#star"/>
+                                    </svg>
+                                    <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="img/star-sharp.svg#star"/>
+                                    </svg>
+                                    <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="img/star-sharp.svg#star"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item-product__wrapper">
+                            <div class="item-product__img-fluid">
+                                <img src="img/new-featured-home-3-img-2.jpg" alt="">
+                            </div>
+                            <div class="item-product__text">
+                                <h4 class="item-product__title">
+                                    <a class="item-product__link"
+                                       href="https://biagiotti.qodeinteractive.com/product-category/body-oil/">
+                                        BAlM
+                                    </a>
+                                </h4>
+
+                                <div class="item-product__description"><a
+                                        href="https://biagiotti.qodeinteractive.com/product-category/body-oil/"></a>
+                                    Body Oil
+                                </div>
+                                <div class="item-product__price">$25.00</div>
+                                <div class="item-product__rate">
+                                    <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="img/star-sharp.svg#star"/>
+                                    </svg>
+                                    <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="img/star-sharp.svg#star"/>
+                                    </svg>
+                                    <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="img/star-sharp.svg#star"/>
+                                    </svg>
+                                    <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="img/star-sharp.svg#star"/>
+                                    </svg>
+                                    <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="img/star-sharp.svg#star"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item-product__wrapper">
+                            <div class="item-product__img-fluid">
+                                <img src="img/new-featured-home-3-img-3.jpg" alt="">
+                            </div>
+                            <div class="item-product__text">
+                                <h4 class="item-product__title">
+                                    <a class="item-product__link"
+                                       href="https://biagiotti.qodeinteractive.com/product-category/body-oil/">
+                                        EASY SPRAY
+                                    </a>
+                                </h4>
+
+                                <div class="item-product__description"><a
+                                        href="https://biagiotti.qodeinteractive.com/product-category/body-oil/"></a>
+                                    Body Oil
+                                </div>
+                                <div class="item-product__price">$28.00</div>
+                                <div class="item-product__rate">
+                                    <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="img/star-sharp.svg#star"/>
+                                    </svg>
+                                    <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="img/star-sharp.svg#star"/>
+                                    </svg>
+                                    <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="img/star-sharp.svg#star"/>
+                                    </svg>
+                                    <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="img/star-sharp.svg#star"/>
+                                    </svg>
+                                    <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="img/star-sharp.svg#star"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-product__wrapper">
+                            <div class="item-product__img-fluid">
+                                <img src="img/new-featured-home-3-img-4.jpg" alt="">
+                            </div>
+                            <div class="item-product__text">
+                                <h4 class="item-product__title">
+                                    <a class="item-product__link"
+                                       href="https://biagiotti.qodeinteractive.com/product-category/body-oil/">
+                                        TINT BALM
+                                    </a>
+                                </h4>
+
+                                <div class="item-product__description"><a
+                                        href="https://biagiotti.qodeinteractive.com/product-category/body-oil/"></a>
+                                    Body Oil
+                                </div>
+                                <div class="item-product__price">$25.00</div>
+                                <div class="item-product__rate">
+                                    <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="img/star-sharp.svg#star"/>
+                                    </svg>
+                                    <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="img/star-sharp.svg#star"/>
+                                    </svg>
+                                    <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="img/star-sharp.svg#star"/>
+                                    </svg>
+                                    <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="img/star-sharp.svg#star"/>
+                                    </svg>
+                                    <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="img/star-sharp.svg#star"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="copyright">
-            Copyright © 2020 Apple Inc. - All rights reserved.
+    </div>
+</div>
+<div class="section-fourth">
+    <div class="container">
+        <div class="slider-box">
+            <div class="title-area">
+                <div class="title-area__shadow-title">
+                    perfect shades
+                </div>
+                <h2 class="title-area__main-title">
+                    FIND YOUR BEAUTY MATCH
+                </h2>
+                <h5 class="title-area__description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </h5>
+            </div>
+            <div id="carousel" class="owl-carousel owl-theme">
+                <div class="item"><img src="img/shop-img-first.jpg" alt="">
+                    <div class="text-area__wrapper">
+                        <div class="text-area__title"><a class="text-area__link"
+                                                         href="https://biagiotti.qodeinteractive.com/product/a-dream/">A
+                            DREAM</a></div>
+                        <div class="text-area__description"><a class="text-area__link"
+                                                               href="https://biagiotti.qodeinteractive.com/product-category/skin-solutions/">Skin
+                            solutions</a></div>
+                        <div class="text-area__price">$32.00</div>
+                        <div class="text-area__rate">
+                            <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/star-sharp.svg#star"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/star-sharp.svg#star"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/star-sharp.svg#star"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/star-sharp.svg#star"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/star-sharp.svg#star"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item"><img src="img/shop-img-second.jpg" alt="">
+                    <div class="text-area__wrapper">
+                        <div class="text-area__title"><a class="text-area__link"
+                                                         href="https://biagiotti.qodeinteractive.com/product/a-dream/">LOTION
+                            K</a></div>
+                        <div class="text-area__description"><a class="text-area__link"
+                                                               href="https://biagiotti.qodeinteractive.com/product-category/skin-solutions/">Skin
+                            solutions</a></div>
+                        <div class="text-area__price">$52.00</div>
+                        <div class="text-area__rate">
+                            <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/star-sharp.svg#star"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/star-sharp.svg#star"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/star-sharp.svg#star"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/star-sharp.svg#star"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/star-sharp.svg#star"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="img/shop-img-three.jpg" alt="">
+
+                    <div class="text-area__wrapper">
+                        <div class="text-area__title"><a class="text-area__link"
+                                                         href="https://biagiotti.qodeinteractive.com/product/a-dream/">DROPS
+                            FOR EYES</a></div>
+                        <div class="text-area__description"><a class="text-area__link"
+                                                               href="https://biagiotti.qodeinteractive.com/product-category/skin-solutions/">Skin
+                            solutions</a></div>
+                        <div class="text-area__price">$18.00</div>
+                        <div class="text-area__rate">
+                            <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/star-sharp.svg#star"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/star-sharp.svg#star"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/star-sharp.svg#star"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/star-sharp.svg#star"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/star-sharp.svg#star"/>
+                            </svg>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="item"><img src="img/shop-img-fourth.jpg" alt="">
+                    <div class="text-area__wrapper">
+                        <div class="text-area__title"><a class="text-area__link"
+                                                         href="https://biagiotti.qodeinteractive.com/product/a-dream/">LIPSTICK
+                            MAT</a></div>
+                        <div class="text-area__description"><a class="text-area__link"
+                                                               href="https://biagiotti.qodeinteractive.com/product-category/skin-solutions/">Skin
+                            solutions</a></div>
+                        <div class="text-area__price">$25.00</div>
+                        <div class="text-area__rate">
+                            <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/star-sharp.svg#star"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/star-sharp.svg#star"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/star-sharp.svg#star"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/star-sharp.svg#star"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/star-sharp.svg#star"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="item"><img src="img/shop-img-fifth.jpg" alt="">
+                    <div class="text-area__wrapper">
+                        <div class="text-area__title"><a class="text-area__link"
+                                                         href="https://biagiotti.qodeinteractive.com/product/a-dream/">S
+                            DREAM</a></div>
+                        <div class="text-area__description"><a class="text-area__link"
+                                                               href="https://biagiotti.qodeinteractive.com/product-category/skin-solutions/">Skin
+                            solutions</a></div>
+                        <div class="text-area__price">$32.00</div>
+                        <div class="text-area__rate">
+                            <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/star-sharp.svg#star"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/star-sharp.svg#star"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/star-sharp.svg#star"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/star-sharp.svg#star"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/star-sharp.svg#star"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</footer>
+</div>
 
+<div class="section-video">
+    <div class="section-video__wrapper">
+        <img src="img/home-5-img-6.jpg" alt="">
+        <div class="btn btn-play-video">
+            <div class="container">
+                <button class="btn-block">
+                    <ion-icon name="play-sharp"></ion-icon>
+                </button>
+            </div>
+        </div>
+    </div>
+
+</div>
+<footer class="footer">
+    
+</footer>
+<script type="text/html" id="action-wrapper">
+    <div class="action__wrapper">
+        <ion-icon class="add-to-card" name="add-outline"></ion-icon>
+        <ion-icon name="eye-sharp"></ion-icon>
+        <ion-icon name="heart-outline"></ion-icon>
+    </div>
+</script>
+
+<script type="text/html" id="video-wrapper">
+    <div class="video-wrapper">
+        <iframe class="video-box"
+                src="https://player.vimeo.com/video/142239321?title=0&byline=0&portrait=0&autoplay=1;
+                width="960/embed/?moog_width=960" height="540" frameborder="no" allowfullscreen="true" autoplay="1"></iframe>
+
+    </div>
+</script>
+
+<script>
+    $(document).ready(function () {
+        $("#left-carousel").owlCarousel({
+            animateOut: 'slideOutUp',
+            animateIn: 'slideInUp',
+            items: 1,
+            margin: 0,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: false,
+            dots: false,
+            center: true,
+            stagePadding: 0,
+            autoWidth: true,
+        });
+
+        $("#right-carousel").owlCarousel({
+            animateOut: 'slideOutDown',
+            animateIn: 'slideInDown',
+            items: 1,
+            margin: 0,
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: false,
+            center: true,
+            dots: false,
+            autoWidth: true,
+        });
+    });
+
+    $(document).ready(function () {
+        $('#carousel').owlCarousel({
+            loop: true,
+            nav: true,
+            items: 4,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            navText: ["<img src='img/arrow-left.svg'>", "<img src='img/arrow-right.svg'>"],
+
+        })
+    });
+
+$('.section-fourth .owl-carousel .item > img').wrap('<div class="item-img__wrapper"></div>');
+    $('.item .item-img__wrapper, .item-product__img-fluid').append($('#action-wrapper').html())
+
+
+$(document).on('click', ".btn-play-video", function () {
+    let videoWrapper = $($('#video-wrapper').html());
+
+    $('body').addClass('video-playing').append(videoWrapper)
+    videoWrapper.click(()=> {
+        $('.video-wrapper').remove()
+    });
+});
+
+</script>
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 </body>
 </html>
