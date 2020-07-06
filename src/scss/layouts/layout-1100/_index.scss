@@ -1,0 +1,36 @@
+@media screen and (max-width: 1100px) {
+  .section__second {
+    .banner-section {
+      &__item {
+        width: 50%;
+        max-height: 300px;
+
+        .content {
+          padding: 27px;
+
+          .banner-custom-title {
+            font-size: 40px;
+          }
+          .banner-title{
+            font-size: 23px;
+          }
+        }
+      }
+    }
+  }
+  .footer{
+    .footer-top{
+      .grid-container{
+        padding: 76px 50px 129px;
+      }
+    }
+    .footer-bottom{
+      .container{
+        .footer-nav__list{
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    }
+  }
+}

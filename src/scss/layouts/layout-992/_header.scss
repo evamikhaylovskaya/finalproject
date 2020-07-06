@@ -1,0 +1,29 @@
+.menu-nav {
+  &.scrolled {
+    display: none;
+  }
+  &.open {
+    height: auto;
+    .mobile-menu {
+      display: block;
+      list-style: none;
+      padding: 0;
+
+      & > li {
+        padding: 8px 25px;
+        font-family: Lato, sans-serif;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: .2em;
+
+        & > a {
+          text-transform: uppercase;
+        }
+
+        & > ul {
+          display: none;
+        }
+      }
+    }
+  }
+}

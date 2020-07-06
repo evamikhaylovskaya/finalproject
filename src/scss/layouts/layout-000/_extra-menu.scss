@@ -1,0 +1,103 @@
+.extra-menu {
+  @include position-absolute-full-size;
+  position: fixed;
+  z-index: 4000;
+  transition: .3s ease-out;
+  transform: translateX(100%);
+
+  &.open {
+    transform: translateX(0%);
+  }
+
+  .overlay {
+    @include position-absolute-full-size;
+  }
+
+  &__inner {
+    width: 525px;
+    height: 100%;
+    background-color: #000000;
+    margin-left: auto;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0 65px;
+  }
+
+  .close-icon {
+    color: white;
+    position: absolute;
+    top: 67px;
+    right: 56px;
+  }
+
+  .first__col {
+    @include flex-center;
+    flex-direction: column;
+    color: #c1c1c1;
+    margin: auto;
+
+    &_title {
+      margin: 35px 0;
+    }
+
+    &_description {
+      margin-bottom: 35px;
+      font-family: "Cormorant Upright", sans-serif;
+      font-size: 20px;
+      line-height: 1.136em;
+      font-style: italic;
+      font-weight: 400;
+      text-align: center;
+    }
+
+    &_sprite {
+      display: flex;
+      justify-content: center;
+
+      .icon {
+        @include border-svg;
+        @include flex-center;
+        transition: all .3s ease-in-out;
+        color: #FFFFFF;
+
+        &:hover {
+          border: 1px solid #fff;
+        }
+      }
+    }
+  }
+
+  .second__col {
+    color: #ffffff;
+    text-align: center;
+    margin-top: auto;
+    padding-bottom: 36px;
+
+    &_title {
+      @include footer-title-style;
+      margin: 30px 0;
+    }
+
+    &_items {
+      @include footer-description;
+      transition: .3s ease-in-out;
+
+      p {
+        margin: 10px 0;
+      }
+
+      a {
+        text-decoration: none;
+        color: #cacaca;
+      }
+
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+}

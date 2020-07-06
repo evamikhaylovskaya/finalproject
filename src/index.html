@@ -24,7 +24,6 @@
     <!-- javascript -->
     <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/vendors/jquery.min.js"></script>
     <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
-
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -59,56 +58,93 @@
 <header class="menu-nav">
     <div class="container">
         <div class="nav-bar">
-            <div class="logo-menu__wrapper">
-                <div class="menu-nav__logo">
-                    <a href="#">
-                        <div class="menu-nav__logo_wrapper">
-                            <img src="img/logo.png" alt="">
-                        </div>
-                    </a>
-                </div>
-                <nav class="menu">
-                    <ul class="menu__list">
-                        <li class="menu__item"><a class="menu__link" href="#">home</a>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="" href="/">
+                            <div class="menu-nav__logo">
+                                <div class="menu-nav__logo_wrapper">
+                                    <img class="black-img" src="img/logo.png" alt="">
+                                    <img class="white-img" src="img/logo_white.png" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="#">home</a>
                         <ul>
-                            <li><a href=""></a>Main Home</li>
-                            <li><a href=""></a>Grid Home</li>
-                            <li><a href=""></a>Cosmetics Home</li>
-                            <li><a href=""></a>Product Gallery</li>
-                            <li><a href=""></a>Fullscreen Slider</li>
-                            <li><a href=""></a>Skincare Home</li>
-                            <li><a href=""></a>Landing</li>
+                            <li><a href="">Main Home</a></li>
+                            <li><a href="">Grid Home</a></li>
+                            <li><a href="">Cosmetics Hom</a></li>
+                            <li><a href="">Product Gallery</a></li>
+                            <li><a href="">Fullscreen Slider</a></li>
+                            <li><a href="">Skincare Home</a></li>
+                            <li><a href="">Landing</a></li>
                         </ul>
-                        </li>
-                        <li class="menu__item"><a class="menu__link" href="#">about us</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">blog</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">shop</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">portfolio</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">contact</a></li>
-                    </ul>
-                </nav>
-            </div>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="#">about us</a>
+                        <ul>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Our Team</a></li>
+                            <li><a href="">FAQ Page</a></li>
+                            <li><a href="">Coming Soon</a></li>
+                            <li><a href="">Pricing Plans</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="#">blog</a>
+                        <ul>
+                            <li><a href="">Standard</a></li>
+                            <li><a href="">Centered</a></li>
+                            <li><a href="">No Sidebar</a></li>
+                            <li><a href="">Post Types</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="#">shop</a>
+                        <ul>
+                            <li><a href="/">Product Types</a></li>
+                            <li><a href="/">Shop Lists</a></li>
+                            <li><a href="/">Shop Layouts</a></li>
+                            <li><a href="/">Shop Pages</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="#">portfolio</a>
+                        <ul>
+                            <li><a href="">Gallery</a></li>
+                            <li><a href="">Standard</a></li>
+                            <li><a href="">Layout</a></li>
+                            <li><a href="">Singles</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="#">contact</a>
+                        <ul>
+                            <li><a href="/">Contact Us</a></li>
+                            <li><a href="/">Get In Touch</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
             <div class="icons-wrapper">
-                <div class="menu__icon">
-                    <div class="wishlist">
-                        <svg class="heart-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                            <use xlink:href="img/heart.svg#heart"/>
+                <div class="icons-inner">
+                    <div class="menu__icon">
+                        <div class="wishlist">
+                            <svg class="heart-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/heart.svg#heart"/>
+                            </svg>
+                        </div>
+                        <div class="menu__icon_text">Wishlist</div>
+                    </div>
+
+
+                    <div class="menu__icon">
+                        <svg class="search-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href="img/search.svg#search"/>
                         </svg>
                     </div>
-                    <div class="menu__icon_text">Wishlist</div>
-
-                </div>
-
-
-                <div class="menu__icon">
-                    <svg class="search-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                        <use xlink:href="img/search.svg#search"/>
-                    </svg>
-                </div>
-                <div class="menu__icon">
-                    <svg class="shopping-bag-icon" viewBox="-35 0 512 512.00102" xmlns="http://www.w3.org/2000/svg">
-                        <use xlink:href="img/shopping-bag.svg#shopping-bag"/>
-                    </svg>
+                    <div class="menu__icon">
+                        <svg class="shopping-bag-icon" viewBox="-35 0 512 512.00102" xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href="img/shopping-bag.svg#shopping-bag"/>
+                        </svg>
+                    </div>
                 </div>
                 <div id="burger-menu" class="burger-menu">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -120,7 +156,72 @@
                     </svg>
                 </div>
             </div>
+
         </div>
+        <ul class="mobile-menu">
+            <li class="menu__item"><a class="menu__link" href="#">home</a>
+                <ul>
+                    <li><a href="">Main Home</a></li>
+                    <li><a href="">Grid Home</a></li>
+                    <li><a href="">Cosmetics Hom</a></li>
+                    <li><a href="">Product Gallery</a></li>
+                    <li><a href="">Fullscreen Slider</a></li>
+                    <li><a href="">Skincare Home</a></li>
+                    <li><a href="">Landing</a></li>
+                </ul>
+            </li>
+            <li class="menu__item"><a class="menu__link" href="#">about us</a>
+                <ul>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Our Team</a></li>
+                    <li><a href="">FAQ Page</a></li>
+                    <li><a href="">Coming Soon</a></li>
+                    <li><a href="">Pricing Plans</a></li>
+                </ul>
+            </li>
+            <li class="menu__item"><a class="menu__link" href="#">blog</a>
+                <ul>
+                    <li><a href="">Standard</a></li>
+                    <li><a href="">Centered</a></li>
+                    <li><a href="">No Sidebar</a></li>
+                    <li><a href="">Post Types</a></li>
+                </ul>
+            </li>
+            <li class="menu__item"><a class="menu__link" href="#">shop</a>
+                <ul>
+                    <li><a href="/">Product Types</a></li>
+                    <li><a href="/">Shop Lists</a></li>
+                    <li><a href="/">Shop Layouts</a></li>
+                    <li><a href="/">Shop Pages</a></li>
+
+                </ul>
+            </li>
+            <li class="menu__item"><a class="menu__link" href="#">portfolio</a>
+                <ul>
+                    <li><a href="">Gallery</a></li>
+                    <li><a href="">Standard</a></li>
+                    <li><a href="">Layout</a></li>
+                    <li><a href="">Singles</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="search-form">
+        <form action="">
+            <input type="text" placeholder="Search..." name="search">
+            <svg class="close-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                 x="0px" y="0px" width="24px" height="24px" viewBox="0 0 29 29" enable-background="new 0 0 29 29"
+                 xml:space="preserve">
+                    <line fill="none" stroke="currentColor" stroke-miterlimit="10" x1="3.893" y1="3.895" x2="25.105"
+                          y2="25.107"></line>
+                <line fill="none" stroke="currentColor" stroke-miterlimit="10" x1="3.893" y1="3.895" x2="25.105"
+                      y2="25.107"></line>
+                <line fill="none" stroke="currentColor" stroke-miterlimit="10" x1="3.894" y1="25.106" x2="25.107"
+                      y2="3.894"></line>
+                <line fill="none" stroke="currentColor" stroke-miterlimit="10" x1="3.894" y1="25.106" x2="25.107"
+                      y2="3.894"></line>
+                </svg>
+        </form>
     </div>
 </header>
 <div class="section__first">
@@ -224,7 +325,7 @@
             </div>
             <div class="product">
                 <div class="grid-container">
-                    <div class="item-product">
+                    <div class="item-product" data-id="1">
                         <div class="item-product__wrapper">
                             <div class="item-product__img-fluid">
                                 <img src="img/new-featured-home-3-img-1.jpg" alt="">
@@ -261,7 +362,8 @@
                                 </div>
                             </div>
                         </div>
-
+                    </div>
+                    <div class="item-product" data-id="2">
                         <div class="item-product__wrapper">
                             <div class="item-product__img-fluid">
                                 <img src="img/new-featured-home-3-img-2.jpg" alt="">
@@ -298,7 +400,8 @@
                                 </div>
                             </div>
                         </div>
-
+                    </div>
+                    <div class="item-product" data-id="3">
                         <div class="item-product__wrapper">
                             <div class="item-product__img-fluid">
                                 <img src="img/new-featured-home-3-img-3.jpg" alt="">
@@ -335,6 +438,9 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="item-product" data-id="4">
                         <div class="item-product__wrapper">
                             <div class="item-product__img-fluid">
                                 <img src="img/new-featured-home-3-img-4.jpg" alt="">
@@ -392,14 +498,20 @@
                 </h5>
             </div>
             <div id="carousel" class="owl-carousel owl-theme">
-                <div class="item"><img src="img/shop-img-first.jpg" alt="">
+                <div class="item item-product"  data-id="5">
+                    <img src="img/shop-img-first.jpg" alt="">
                     <div class="text-area__wrapper">
-                        <div class="text-area__title"><a class="text-area__link"
-                                                         href="https://biagiotti.qodeinteractive.com/product/a-dream/">A
-                            DREAM</a></div>
-                        <div class="text-area__description"><a class="text-area__link"
-                                                               href="https://biagiotti.qodeinteractive.com/product-category/skin-solutions/">Skin
-                            solutions</a></div>
+                        <div class="text-area__title">
+                            <a class="text-area__link" href="https://biagiotti.qodeinteractive.com/product/a-dream/">
+                                A DREAM
+                            </a>
+                        </div>
+                        <div class="text-area__description">
+                            <a class="text-area__link"
+                               href="https://biagiotti.qodeinteractive.com/product-category/skin-solutions/">
+                                Skin solutions
+                            </a>
+                        </div>
                         <div class="text-area__price">$32.00</div>
                         <div class="text-area__rate">
                             <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
@@ -421,14 +533,20 @@
                     </div>
                 </div>
 
-                <div class="item"><img src="img/shop-img-second.jpg" alt="">
+                <div class="item item-product" data-id="6">
+                    <img src="img/shop-img-second.jpg" alt="">
                     <div class="text-area__wrapper">
-                        <div class="text-area__title"><a class="text-area__link"
-                                                         href="https://biagiotti.qodeinteractive.com/product/a-dream/">LOTION
-                            K</a></div>
-                        <div class="text-area__description"><a class="text-area__link"
-                                                               href="https://biagiotti.qodeinteractive.com/product-category/skin-solutions/">Skin
-                            solutions</a></div>
+                        <div class="text-area__title">
+                            <a class="text-area__link" href="https://biagiotti.qodeinteractive.com/product/a-dream/">
+                                LOTION K
+                            </a>
+                        </div>
+                        <div class="text-area__description">
+                            <a class="text-area__link"
+                               href="https://biagiotti.qodeinteractive.com/product-category/skin-solutions/">
+                                Skin solutions
+                            </a>
+                        </div>
                         <div class="text-area__price">$52.00</div>
                         <div class="text-area__rate">
                             <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
@@ -449,16 +567,21 @@
                         </div>
                     </div>
                 </div>
-                <div class="item">
+                <div class="item item-product" data-id="7">
                     <img src="img/shop-img-three.jpg" alt="">
 
                     <div class="text-area__wrapper">
-                        <div class="text-area__title"><a class="text-area__link"
-                                                         href="https://biagiotti.qodeinteractive.com/product/a-dream/">DROPS
-                            FOR EYES</a></div>
-                        <div class="text-area__description"><a class="text-area__link"
-                                                               href="https://biagiotti.qodeinteractive.com/product-category/skin-solutions/">Skin
-                            solutions</a></div>
+                        <div class="text-area__title">
+                            <a class="text-area__link" href="https://biagiotti.qodeinteractive.com/product/a-dream/">
+                                DROPS FOR EYES
+                            </a>
+                        </div>
+                        <div class="text-area__description">
+                            <a class="text-area__link"
+                               href="https://biagiotti.qodeinteractive.com/product-category/skin-solutions/">
+                                Skin solutions
+                            </a>
+                        </div>
                         <div class="text-area__price">$18.00</div>
                         <div class="text-area__rate">
                             <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
@@ -480,14 +603,20 @@
                     </div>
 
                 </div>
-                <div class="item"><img src="img/shop-img-fourth.jpg" alt="">
+                <div class="item item-product" data-id="8">
+                    <img src="img/shop-img-fourth.jpg" alt="">
                     <div class="text-area__wrapper">
-                        <div class="text-area__title"><a class="text-area__link"
-                                                         href="https://biagiotti.qodeinteractive.com/product/a-dream/">LIPSTICK
-                            MAT</a></div>
-                        <div class="text-area__description"><a class="text-area__link"
-                                                               href="https://biagiotti.qodeinteractive.com/product-category/skin-solutions/">Skin
-                            solutions</a></div>
+                        <div class="text-area__title">
+                            <a class="text-area__link" href="https://biagiotti.qodeinteractive.com/product/a-dream/">
+                                LIPSTICK MAT
+                            </a>
+                        </div>
+                        <div class="text-area__description">
+                            <a class="text-area__link"
+                               href="https://biagiotti.qodeinteractive.com/product-category/skin-solutions/">
+                                Skin solutions
+                            </a>
+                        </div>
                         <div class="text-area__price">$25.00</div>
                         <div class="text-area__rate">
                             <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
@@ -508,14 +637,20 @@
                         </div>
                     </div>
                 </div>
-                <div class="item"><img src="img/shop-img-fifth.jpg" alt="">
+                <div class="item item-product" data-id="9">
+                    <img src="img/shop-img-fifth.jpg" alt="">
                     <div class="text-area__wrapper">
-                        <div class="text-area__title"><a class="text-area__link"
-                                                         href="https://biagiotti.qodeinteractive.com/product/a-dream/">S
-                            DREAM</a></div>
-                        <div class="text-area__description"><a class="text-area__link"
-                                                               href="https://biagiotti.qodeinteractive.com/product-category/skin-solutions/">Skin
-                            solutions</a></div>
+                        <div class="text-area__title">
+                            <a class="text-area__link" href="https://biagiotti.qodeinteractive.com/product/a-dream/">
+                                S DREAM
+                            </a>
+                        </div>
+                        <div class="text-area__description">
+                            <a class="text-area__link"
+                               href="https://biagiotti.qodeinteractive.com/product-category/skin-solutions/">
+                                Skin solutions
+                            </a>
+                        </div>
                         <div class="text-area__price">$32.00</div>
                         <div class="text-area__rate">
                             <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
@@ -540,7 +675,6 @@
         </div>
     </div>
 </div>
-
 <div class="section-video">
     <div class="section-video__wrapper">
         <img src="img/home-5-img-6.jpg" alt="">
@@ -555,84 +689,349 @@
 
 </div>
 <footer class="footer">
-    
+    <div class="footer-top">
+        <div class="grid-container">
+            <div class="grid__wrapper">
+                <div class="first-col">
+                    <h4 class="first-col__title">
+                        CONTACT
+                    </h4>
+                    <div class="description">
+                        <div class="first-col__address">
+                            Address: <a
+                                href="https://www.google.com/maps/place/Seestrasse,+Z%C3%BCrich,+Switzerland/@47.3418111,8.5345508,17z/data=!3m1!4b1!4m5!3m4!1s0x479aa56101b682b5:0xad708f704a6d35d6!8m2!3d47.3418075!4d8.5367395?hl=en&amp;_ga=2.213240596.142294813.1592505492-766810155.1589585076"
+                                target="_blank" rel="noopener noreferrer">Seestrasse 21, Zurich</a>
+                        </div>
+                        <div class="first-col__email">E-mail:
+                            <a href="mailto:biagiottitheme@gmail.com">biagiottitheme@gmail.com</a>
+                        </div>
+                        <div class="first-col__phone">
+                            Phone : <a href="tel:+994117253912" target="_blank" rel="noopener noreferrer">+ 99 411 725
+                            39
+                            12</a>
+                        </div>
+                    </div>
+                    <div class="first-col__cards">
+                        <img src="img/footer-img-1.png" alt="">
+                    </div>
+                </div>
+                <div class="second-col">
+                    <div class="second-col__title">
+                        <a href="https://biagiotti.qodeinteractive.com">
+                            <img src="img/logo_white.png" alt="">
+                        </a>
+                    </div>
+                    <h5 class="second-col__description">
+                        An oasis of online beauty built specifically so your new cosmetics site can take everyone’s
+                        breaths away.
+                    </h5>
+                    <div class="second-col__sprite">
+                        <a href="https://www.facebook.com/QodeInteractive/?_ga=2.149752758.142294813.1592505492-766810155.1589585076">
+                            <div class="icon icon|__facebook">
+                                <ion-icon name="logo-facebook"></ion-icon>
+
+                            </div>
+                        </a>
+                        <div class="icon icon__twitter">
+                            <a href="https://twitter.com/QodeInteractive?_ga=2.221569560.142294813.1592505492-766810155.1589585076 ">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                        </div>
+                        <div class="icon icon__instagram"><a
+                                href="https://www.instagram.com/qodeinteractive/?_ga=2.149892022.142294813.1592505492-766810155.1589585076">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                        </div>
+                        <div class="icon icon__pinterest">
+                            <a href="https://www.pinterest.com/qodeinteractive/?_ga=2.149892022.142294813.1592505492-766810155.1589585076">
+                                <ion-icon name="logo-pinterest"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="third-col">
+                    <div class="third-col__title">
+                        COLLECTIONS
+                    </div>
+                    <div class="third-col__description">
+                        <p>
+                            <a href="https://biagiotti.qodeinteractive.com/glowing-skin-is-a-result-of-proper-skincare/"
+                               target="_blank" rel="noopener noreferrer">Glowing skin is a result</a></p>
+                        <p>
+                            <a href="https://biagiotti.qodeinteractive.com/treat-your-makeup-like-jewelry-for-the-face/">ABCDEH
+                                Beauty – Forever Young</a></p>
+                        <p>
+                            <a href="https://biagiotti.qodeinteractive.com/i-believe-that-all-women-are-pretty-without-makeup/"
+                               target="_blank" rel="noopener noreferrer">Pure Skin Solutions</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-nav">
+                <ul class="footer-nav__list">
+                    <li class="footer-nav__item">
+                        <a href="https://biagiotti.qodeinteractive.com/get-in-touch/">Privacy Policy</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="https://biagiotti.qodeinteractive.com/pricing-plans/">Terms and Conditions</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="https://biagiotti.qodeinteractive.com/about-us/">About</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="https://biagiotti.qodeinteractive.com/faq-page/">Shipping Info</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="https://biagiotti.qodeinteractive.com/cart/">Returns/Exchanges</a>
+                    </li>
+                    <li class="footer-nav__item">
+                        <a href="https://biagiotti.qodeinteractive.com/contact-us/">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
 </footer>
+
+<div class="extra-menu">
+    <div class="overlay"></div>
+    <div class="extra-menu__inner">
+        <div class="extra-menu__wrapper">
+            <svg class="close-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                 x="0px" y="0px"
+                 width="29px" height="29px" viewBox="0 0 29 29" enable-background="new 0 0 29 29" xml:space="preserve">
+                <line fill="none" stroke="currentColor" stroke-miterlimit="10" x1="3.893" y1="3.895" x2="25.105"
+                      y2="25.107"></line>
+                <line fill="none" stroke="currentColor" stroke-miterlimit="10" x1="3.893" y1="3.895" x2="25.105"
+                      y2="25.107"></line>
+                <line fill="none" stroke="currentColor" stroke-miterlimit="10" x1="3.894" y1="25.106" x2="25.107"
+                      y2="3.894"></line>
+                <line fill="none" stroke="currentColor" stroke-miterlimit="10" x1="3.894" y1="25.106" x2="25.107"
+                      y2="3.894"></line>
+                 </svg>
+            <div class="first__col">
+                <div class="first__col_title">
+                    <a href="https://biagiotti.qodeinteractive.com">
+                        <img src="img/logo_white.png " width="166" height="93" alt="">
+                    </a>
+                </div>
+                <div class="first__col_description">
+                    At vero eos et accusamus et iusto odio dignissimos qui blanditiis praesentium voluptatum.
+                </div>
+                <div class="first__col_sprite">
+                    <a href="https://www.facebook.com/QodeInteractive/?_ga=2.149752758.142294813.1592505492-766810155.1589585076">
+                        <div class="icon icon|__facebook">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </div>
+                    </a>
+                    <a href="https://twitter.com/QodeInteractive?_ga=2.221569560.142294813.1592505492-766810155.1589585076 ">
+                        <div class="icon icon__twitter">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/qodeinteractive/?_ga=2.149892022.142294813.1592505492-766810155.1589585076">
+                        <div class="icon icon__instagram">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </div>
+                    </a>
+                    <a href="https://www.pinterest.com/qodeinteractive/?_ga=2.149892022.142294813.1592505492-766810155.1589585076">
+                        <div class="icon icon__pinterest">
+                            <ion-icon name="logo-pinterest"></ion-icon>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="second__col">
+                <div class="second__col_title">
+                    COLLECTIONS
+                </div>
+                <div class="second__col_items">
+                    <p>
+                        <a href="https://biagiotti.qodeinteractive.com/glowing-skin-is-a-result-of-proper-skincare/">Organic
+                            Collections</a>
+                    <p>
+                        <a href="https://biagiotti.qodeinteractive.com/treat-your-makeup-like-jewelry-for-the-face/">ABCDEH
+                            Beauty – Forever Young</a>
+                    </p>
+                    <p>
+                        <a href="https://biagiotti.qodeinteractive.com/i-believe-that-all-women-are-pretty-without-makeup/"
+                           target="_blank" rel="noopener noreferrer">Pure Skin Solutions</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section-form login-form hide">
+    <div class="overlay"></div>
+    <div class="form-box">
+        <div class="form-text">
+            <div class="form-box__title-question">
+                Already have an account?
+            </div>
+            <h2 class="form-box__title">
+                LOG IN
+            </h2>
+        </div>
+        <form action="">
+            <input class=" form form__email" type="text" required title="Three or more characters"
+                   placeholder="Username*">
+            <div class="error"></div>
+            <input class=" form form__password" type="password" placeholder="Password*">
+            <div class="error"></div>
+            <div class="button-wrapper">
+                <a href="/">
+                    <button class="submit-button" type="submit">LOG IN</button>
+                </a>
+                <input type="checkbox">
+                <span class="checkbox-text">Remember me</span>
+            </div>
+            <div class="password-question">
+                Lost your password?
+            </div>
+            <div class="new-account">
+                <div class="description">Don’t have an account?</div>
+                <button type="submit">CREATE AN ACCOUNT</button>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="scroll-top">
+    <div class="inner-item">TOP</div>
+</div>
+<div class="pop-up-window">
+    <div class="content-box">
+        <svg class="close-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+             x="0px" y="0px"
+             width="29px" height="29px" viewBox="0 0 29 29" enable-background="new 0 0 29 29" xml:space="preserve">
+                <line fill="none" stroke="currentColor" stroke-miterlimit="10" x1="3.893" y1="3.895" x2="25.105"
+                      y2="25.107"></line>
+            <line fill="none" stroke="currentColor" stroke-miterlimit="10" x1="3.893" y1="3.895" x2="25.105"
+                  y2="25.107"></line>
+            <line fill="none" stroke="currentColor" stroke-miterlimit="10" x1="3.894" y1="25.106" x2="25.107"
+                  y2="3.894"></line>
+            <line fill="none" stroke="currentColor" stroke-miterlimit="10" x1="3.894" y1="25.106" x2="25.107"
+                  y2="3.894"></line>
+</svg>
+        <div class="title__wrapper">
+            <div class="shadow-title">subscribe</div>
+            <div class="main-title">STAY IN TOUCH</div>
+        </div>
+        <form action="">
+            <input type="email" placeholder="E-mail address">
+            <div class="error"></div>
+            <button class="submit-button" type="submit">SEND</button>
+        </form>
+        <div class="helper-text">*At vero eos et accusamus et iusto odio dignissimos</div>
+        <div class="checkbox">
+            <input type="checkbox">
+            <div class="radio-description">Prevent This Pop-up</div>
+        </div>
+    </div>
+</div>
+
+
 <script type="text/html" id="action-wrapper">
     <div class="action__wrapper">
         <ion-icon class="add-to-card" name="add-outline"></ion-icon>
-        <ion-icon name="eye-sharp"></ion-icon>
-        <ion-icon name="heart-outline"></ion-icon>
+        <ion-icon class="show-item" name="eye-sharp"></ion-icon>
+        <ion-icon class="add-to-wishlist" name="heart-outline"></ion-icon>
     </div>
+</script>
+
+<script type="text/html" id="item-product">
+
+    <div class="view-box">
+        <div class="overlay"></div>
+        <div class="content-box">
+            <div class="grid-container">
+                <div class="first-col"><img src="" alt=""></div>
+                <div class="second-col">
+                    <svg class="close-icon" xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink"
+                         x="0px" y="0px" width="24px" height="24px" viewBox="0 0 29 29"
+                         enable-background="new 0 0 29 29"
+                         xml:space="preserve">
+                    <line fill="none" stroke="currentColor" stroke-miterlimit="10" x1="3.893" y1="3.895" x2="25.105"
+                          y2="25.107"></line>
+                        <line fill="none" stroke="currentColor" stroke-miterlimit="10" x1="3.893" y1="3.895" x2="25.105"
+                              y2="25.107"></line>
+                        <line fill="none" stroke="currentColor" stroke-miterlimit="10" x1="3.894" y1="25.106"
+                              x2="25.107"
+                              y2="3.894"></line>
+                        <line fill="none" stroke="currentColor" stroke-miterlimit="10" x1="3.894" y1="25.106"
+                              x2="25.107"
+                              y2="3.894"></line>
+                </svg>
+                    <div class="product-description">
+                        <h2 class="product__title"></h2>
+                        <p class="product__price"></p>
+                        <div class="product__rate">
+                            <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/star-sharp.svg#star"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/star-sharp.svg#star"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/star-sharp.svg#star"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/star-sharp.svg#star"/>
+                            </svg>
+                            <svg class="star" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/star-sharp.svg#star"/>
+                            </svg>
+                        </div>
+                        <p class="product__description"></p>
+                        <form class="product__quantity" action="">
+                            <div class="quantity  quantity-minus" data-value="-1">
+                                -
+                            </div>
+                            <input class="quantity number-of-product" type="text" data-step="1" min="0" max="1000"
+                                   name="quantity" autocomplete="off"
+                                   value="1" size="4" inputmode="numeric">
+                            <div class="quantity quantity-plus" data-value="1">
+                                +
+                            </div>
+                            <button type="submit">PURCHASE</button>
+                        </form>
+                        <div class="wishlist">
+                            <a href="https://biagiotti.qodeinteractive.com/wishlist/"
+                               rel="nofollow">
+                                <svg class="heart-icon" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/heart.svg#heart"/>
+                                </svg>
+                                <span>Browse Wishlist</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </script>
 
 <script type="text/html" id="video-wrapper">
     <div class="video-wrapper">
         <iframe class="video-box"
                 src="https://player.vimeo.com/video/142239321?title=0&byline=0&portrait=0&autoplay=1;
-                width="960/embed/?moog_width=960" height="540" frameborder="no" allowfullscreen="true" autoplay="1"></iframe>
-
+                width=" 960
+        /embed/?moog_width=960" height="540" frameborder="no" allowfullscreen="true" autoplay="1"></iframe>
     </div>
 </script>
 
-<script>
-    $(document).ready(function () {
-        $("#left-carousel").owlCarousel({
-            animateOut: 'slideOutUp',
-            animateIn: 'slideInUp',
-            items: 1,
-            margin: 0,
-            loop: true,
-            autoplay: true,
-            autoplayTimeout: 3000,
-            autoplayHoverPause: false,
-            dots: false,
-            center: true,
-            stagePadding: 0,
-            autoWidth: true,
-        });
 
-        $("#right-carousel").owlCarousel({
-            animateOut: 'slideOutDown',
-            animateIn: 'slideInDown',
-            items: 1,
-            margin: 0,
-            loop: true,
-            autoplay: true,
-            autoplayTimeout: 3000,
-            autoplayHoverPause: false,
-            center: true,
-            dots: false,
-            autoWidth: true,
-        });
-    });
-
-    $(document).ready(function () {
-        $('#carousel').owlCarousel({
-            loop: true,
-            nav: true,
-            items: 4,
-            dots: false,
-            autoplay: true,
-            autoplayTimeout: 5000,
-            navText: ["<img src='img/arrow-left.svg'>", "<img src='img/arrow-right.svg'>"],
-
-        })
-    });
-
-$('.section-fourth .owl-carousel .item > img').wrap('<div class="item-img__wrapper"></div>');
-    $('.item .item-img__wrapper, .item-product__img-fluid').append($('#action-wrapper').html())
-
-
-$(document).on('click', ".btn-play-video", function () {
-    let videoWrapper = $($('#video-wrapper').html());
-
-    $('body').addClass('video-playing').append(videoWrapper)
-    videoWrapper.click(()=> {
-        $('.video-wrapper').remove()
-    });
-});
-
-</script>
 <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+<script src="js/script.js"></script>
+
 </body>
 </html>

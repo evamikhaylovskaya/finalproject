@@ -3,7 +3,9 @@
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-cursor: pointer;
+    cursor: pointer;
+    border-bottom: 1px solid #42414124;
+
     &__item {
       width: 25%;
       max-height: 297px;
@@ -24,18 +26,20 @@ cursor: pointer;
         flex-direction: column;
         justify-content: flex-end;
         padding: 27px;
-        .banner-custom-title{
+
+        .banner-custom-title {
           font-family: TuesdayNight;
           font-size: 40px;
           color: #c4c4c4;
           margin: 0 -2px -6px;
 
         }
-        .banner-title{
+
+        .banner-title {
           color: #000;
           font-size: 23px;
           letter-spacing: .07em;
-          font-family: Lato;
+          font-family: Lato, sans-serif;
           text-transform: uppercase;
         }
       }
@@ -44,12 +48,12 @@ cursor: pointer;
         transition: all .5s ease-in-out;
         width: 100%;
         max-width: 100%;
-      transform: scale(1.1) translateX(0);
+        transform: scale(1.1) translateX(0);
 
       }
 
       &:hover img {
-        transform: scale(1.1)  translateX(2%);
+        transform: scale(1.1) translateX(2%);
       }
     }
   }

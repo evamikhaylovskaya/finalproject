@@ -1,0 +1,96 @@
+.pop-up-window {
+  background-color: rgba(255, 255, 255, .75);
+  display: none;
+
+  .content-box {
+    position: fixed;
+    left: 60px;
+    bottom: 0;
+    padding: 63px 33px 33px 32px;
+    width: 460px;
+    background-color: #fff;
+    z-index: 3000;
+    transition: .3s ease-in-out;
+    transform: scale(0.8);
+
+    &.zoom-in {
+      transform: scale(1);
+    }
+
+    svg {
+      margin-left: auto;
+      display: block;
+    }
+
+    .title__wrapper {
+      @include flex-center;
+      flex-direction: column;
+
+      .shadow-title {
+        @include shadow-title;
+
+      }
+
+      .main-title {
+        @include main-title;
+        margin: 0 0 24px;
+      }
+    }
+
+    form {
+      display: flex;
+
+      input {
+        padding: 10px 22px;
+        font-size: 18px;
+        font-family: Cormorant, serif;
+        font-weight: 500;
+        line-height: 23px;
+        font-style: italic;
+        color: #5a5a5a;
+        margin: 0 6px;
+        border: 1px solid black;
+      }
+
+      button {
+        border: 1px solid black;
+        color: #fff;
+        background-color: #000;
+        font-family: Lato, sans-serif;
+        font-size: 12px;
+        line-height: 2em;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: .2em;
+        text-align: center;
+        transition: .3s ease-in-out;
+        padding: 13px 48px;
+
+        &:hover {
+          color: black;
+          background-color: #fff;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .helper-text {
+      margin: 3px 0 0;
+      font-size: 14px;
+      font-style: italic;
+      font-family: Cormorant, serif;
+      font-weight: 500;
+      line-height: 23px;
+    }
+
+    .checkbox {
+      @include flex-center;
+      justify-content: flex-end;
+      margin-top: 8px;
+
+      input {
+        margin: 0 6px;
+      }
+    }
+  }
+}

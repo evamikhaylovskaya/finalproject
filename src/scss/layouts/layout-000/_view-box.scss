@@ -1,0 +1,123 @@
+.view-box {
+  @include position-absolute-full-size;
+  position: fixed;
+  z-index: 2000;
+  @include flex-center;
+
+  .overlay {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, .75);
+    z-index: -1;
+  }
+  .content-box {
+    padding: 0 6px;
+    max-width: 950px;
+    max-height: 635px;
+    background-color: #fff;
+    box-shadow: 0 0 20px 0 rgba(111, 111, 111, .23);
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .first-col img {
+      max-width: 100%;
+      overflow: hidden;
+    }
+
+    .second-col {
+      padding: 65px 44px 70px;
+      position: relative;
+
+      .close-icon {
+        top: 26px;
+        right: 35px;
+        position: absolute;
+      }
+
+      .product-description {
+        .product {
+          &__title {
+            @include view-title;
+          }
+
+          &__price {
+            @include view-price;
+          }
+
+          &__rate {
+            margin: 13px 0 3px;
+            user-select: none;
+
+            svg {
+              width: 16px;
+              fill: rgb(196, 196, 196);
+
+              &:hover {
+                fill: #DD5656;
+                cursor: pointer;
+              }
+            }
+          }
+
+          &__description {
+            @include view-description;
+          }
+
+          &__quantity {
+            display: flex;
+            margin: 40px 0;
+
+            .quantity {
+              @include view-quantity;
+            }
+
+            .number-of-product {
+              border-left: none;
+              border-right: none;
+              user-select: none;
+              cursor: text;
+            }
+
+            button {
+              margin: 0 27px;
+              @include view-button;
+              transition: all .3s ease-in-out;
+              &:hover{
+                background-color: #fff;
+                color: black;
+              }
+            }
+          }
+        }
+
+        .wishlist, a {
+          display: flex;
+          align-items: center;
+          user-select: none;
+
+          svg {
+            width: 20px;
+            transition: all .2s ease-in-out;
+
+            &:hover {
+              fill: #838383;
+            }
+          }
+
+          span {
+            margin: 0 10px;
+            font-family: Cormorant, serif;
+            font-size: 18px;
+            font-style: italic;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+}

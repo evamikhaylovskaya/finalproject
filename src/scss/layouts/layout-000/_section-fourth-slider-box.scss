@@ -1,29 +1,46 @@
 .section-fourth {
   .container {
-    padding: 125px 287px 70px;
-
+    padding: 125px 120px 70px;
+    margin: 0 auto;
+    max-width: 1300px;
     .slider-box {
       .owl-nav {
         position: absolute;
         transform: translate(0, 50%);
-        top: 50%;
+        top: 30%;
+        right: 15px;
         width: 100%;
         display: flex;
         justify-content: space-between;
-
+        z-index: -1;
         .owl-prev {
           background-color: transparent;
+          margin-left: -10px;
 
           img {
             position: relative;
             transition: .3s ease-in-out;
-
           }
 
           &:hover img {
             transform: translateX(-10px);
           }
         }
+
+        .owl-next {
+          background-color: transparent;
+          margin-right: -40px;
+
+          img {
+            position: relative;
+            transition: .3s ease-in-out;
+          }
+
+          &:hover img {
+            transform: translateX(10px);
+          }
+        }
+
       }
 
       .title-area {

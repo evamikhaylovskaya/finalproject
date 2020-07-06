@@ -1,4 +1,4 @@
-@mixin shadow-title{
+@mixin shadow-title {
   margin: 0 0 5px 10px;
   font-family: TuesdayNight;
   font-size: 42px;
@@ -6,7 +6,8 @@
   font-weight: 400;
   color: #e5e5e5;
 }
-@mixin main-title{
+
+@mixin main-title {
   font-family: Lato, sans-serif;
   font-size: 30px;
   line-height: 1.267em;
@@ -16,11 +17,12 @@
   font-weight: 400;
   margin: 0;
 }
-@mixin description{
+
+@mixin description {
   margin: 3px 0;
   padding-top: 4px;
   color: rgb(90, 90, 90);
-  font-family: Cormorant;
+  font-family: 'Cormorant Upright', sans-serif;
   font-size: 22px;
   line-height: 1.136em;
   font-style: italic;
@@ -28,28 +30,32 @@
   text-transform: none;
   font-weight: 400;
 }
-@mixin title-of-product{
+
+@mixin title-of-product {
   margin: 0;
   font-size: 17px;
   font-weight: 400;
   letter-spacing: 1.275px;
   line-height: 23.001px;
 }
-@mixin link-of-product{
+
+@mixin link-of-product {
   text-decoration: none;
   color: black;
 }
-@mixin description-of-product{
+
+@mixin description-of-product {
   margin: 2px 0;
-  font-family: Cormorant, serif;
+  font-family: 'Cormorant Upright', serif;
   font-size: 16px;
   color: #838383;
   font-weight: 500;
   line-height: 23px;
 }
-@mixin price-of-product{
+
+@mixin price-of-product {
   margin: 4px 0 0;
-  font-family: Cormorant, serif;
+  font-family: 'Cormorant Upright', serif;
   font-size: 22px;
   font-weight: 500;
   line-height: 22px;
@@ -57,19 +63,126 @@
   text-transform: uppercase;
   color: #000;
 }
-@mixin rate-of-product{
+
+@mixin rate-of-product {
   cursor: pointer;
   margin: 11px 3px 2px;
 }
-@mixin position-absolute-full-size{
+
+@mixin position-absolute-full-size {
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
 }
-@mixin  flex-center{
+
+@mixin flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@mixin border-svg{
+  width: 37px;
+  height: 37px;
+  background: black;
+  font-size: 17px;
+  margin: 0 4px;
+  border: 1px solid #d7d7d78f;
+
+}
+
+@mixin footer-title-style {
+  font-weight: 500;
+  font-family: Lato, sans-serif;
+  font-size: 17px;
+  line-height: 1.353em;
+  letter-spacing: .075em;
+}
+
+@mixin footer-description {
+  font-family: 'Cormorant Upright', sans-serif;
+  font-style: italic;
+  text-decoration: none;
+  color: #cacaca;
+  font-weight: 500;
+  line-height: 23px;
+}
+
+@mixin footer-bottom-link {
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+
+@mixin animation {
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.01);
+    color: black;
+  }
+}
+
+@mixin no-select{
+  user-select: none;
+}
+@mixin view-title{
+  font-family: Lato,sans-serif;
+  font-size: 30px;
+  line-height: 1.267em;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: #000;
+  margin: 0 0 7px;
+  font-weight: 400;
+}
+@mixin view-price{
+  position: relative;
+  display: block;
+  margin: 4px 0 0;
+  font-family: "Cormorant Upright",serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: .05em;
+}
+@mixin view-description{
+
+  font-family: "Cormorant Upright" ,serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 23px;
+  color: #838383;
+  margin-top: 17px;
+  padding-right:60px ;
+}
+@mixin view-quantity{
+  width: 52px;
+  height: 52px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 48px;
+  border: 1px solid #d8d8d8;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+@mixin view-button{
+  user-select: none;
+  padding: 13px 48px;
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #000;
+  cursor: pointer;
+  font-family: Lato,sans-serif;
+  font-size: 12px;
+  line-height: 2em;
+  font-weight: 400;
+  letter-spacing: .2em;
+
 }

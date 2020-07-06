@@ -1,0 +1,135 @@
+.login-form {
+  background-color: rgba(255, 255, 255, .75);
+  @include position-absolute-full-size;
+  position: fixed;
+  z-index: 2000;
+  @include flex-center;
+
+  &.hide {
+    display: none;
+  }
+
+  .overlay {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  .form-box {
+    font-family: Cormorant, serif;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px 0 rgba(111, 111, 111, .23);
+    padding: 40px 60px 64px;
+    position: absolute;
+    min-width: 480px;
+
+    .form-text {
+      @include flex-center;
+      flex-direction: column;
+    }
+
+    &__title-question {
+      color: #838383;
+      line-height: 11px;
+      margin: 10px 0;
+    }
+
+    &__title {
+      line-height: 4px;
+      letter-spacing: .05em;
+      color: #000;
+      margin: 20px 0;
+      font-weight: 400;
+      font-family: Lato, sans-serif;
+      font-size: 30px;
+    }
+
+    .error {
+      color: red;
+    }
+
+    .form {
+      width: 100%;
+      margin: 4px 0;
+      padding: 15px 23px;
+      font-size: 18px;
+      line-height: 19px;
+      font-weight: inherit;
+      background-color: #fff;
+      border: 1px solid #cbcbcb;
+      font-style: italic;
+    }
+
+    .button-wrapper {
+      display: flex;
+      align-items: center;
+
+      .submit-button {
+        padding: 11px 43px;
+        background-color: #fff;
+        font-family: Lato, sans-serif;
+        font-size: 12px;
+        line-height: 2em;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: .2em;
+        border: 1px solid black;
+        margin: 4px 20px 0 0;
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+          background-color: black;
+          color: white;
+        }
+      }
+
+      .checkbox-text {
+        color: black;
+        margin: 0 4px;
+      }
+    }
+
+    .password-question {
+      font-size: 22px;
+      line-height: 25px;
+      font-style: italic;
+      color: #5a5a5a;
+      margin: 14px 0;
+    }
+
+    .new-account {
+      padding: 33px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .description {
+        margin: 10px 0;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 23px;
+      }
+
+      button {
+        cursor: pointer;
+        background-color: #ffe7e3;
+        width: 100%;
+        padding: 13px 26px;
+        border: none;
+        transition: .3s ease-in-out;
+        letter-spacing: 2px;
+
+        &:hover {
+          color: white;
+          background-color: black;
+        }
+      }
+    }
+  }
+}
+

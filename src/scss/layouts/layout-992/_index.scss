@@ -1,2 +1,80 @@
 @media screen and (max-width: 992px) {
+  @import "_header.scss";
+  .top-menu {
+    display: none;
+  }
+  .menu-nav {
+    border-bottom: 1px solid #cbcbcb;
+
+    .container {
+      padding: 0 112px;
+
+
+      .nav-bar {
+        justify-content: space-between;
+
+        .menu {
+          .menu__item:not(:first-child) {
+            display: none;
+          }
+        }
+
+        .icons-wrapper {
+          .icons-inner {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .section__first {
+    .overlay-center {
+      .title-slider {
+        line-height: 62px;
+        font-size: 50px;
+        margin: 30px 0;
+      }
+    }
+  }
+
+  .section-three {
+    .container {
+      padding: 0 30px;
+    }
+  }
+  .section-fourth {
+    .container {
+      padding: 125px 30px 70px;
+    }
+  }
+  .footer {
+    .footer-top {
+      .grid-container {
+        padding: 76px 20px 80px;
+
+        .grid__wrapper {
+          column-gap: 20px;
+
+          .second-col__title {
+            margin: 0 0 -40px;
+          }
+        }
+
+        .third-col {
+          .third-col__title {
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+  .footer-bottom {
+    .container {
+      padding: 20px 15px;
+    }
+  }
+  .extra-menu {
+    display: none;
+  }
 }

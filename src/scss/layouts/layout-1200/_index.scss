@@ -1,0 +1,16 @@
+.menu-nav {
+  .container {
+    padding: 0 20px;
+
+    .nav-bar {
+      .menu__item {
+        font-size: 10px;
+        padding: 0 17px;
+      }
+
+      .icons-wrapper {
+        column-gap: 20px;
+      }
+    }
+  }
+}
