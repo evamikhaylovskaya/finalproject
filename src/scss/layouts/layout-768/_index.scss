@@ -1,11 +1,18 @@
 @media screen and (max-width: 768px) {
   .menu-nav {
+    .mobile-menu{
+      .menu__item{
+        padding: 0 80px;
+        ion-icon{
+         right: 30px;
+        }
+      }
+    }
     .container {
       padding: 0;
 
       .nav-bar {
         justify-content: space-around;
-
         .icons-wrapper {
           display: flex;
         }

@@ -1,4 +1,49 @@
 .menu-nav {
+  .mobile-menu {
+    width: 100%;
+    background-color: #fff;
+    padding: 0;
+
+    .menu__item {
+      padding: 0 22px 9px 0;
+      font-size: 12px;
+      line-height: 23px;
+      text-transform: uppercase;
+      font-weight: 400;
+      letter-spacing: 2.4px;
+      font-family: 'Lato', sans-serif;
+      list-style: none;
+      position: relative;
+
+      ion-icon {
+        position: absolute;
+        right: 0;
+        top: 13px;
+        transition: all .3s ease-in-out;
+      }
+
+      &.open {
+        ion-icon {
+          transform: rotate(90deg);
+        }
+      }
+
+      & > ul {
+        list-style: none;
+        padding-left: 20px;
+        padding-top: 10px;
+        display: none;
+        & > li {
+          font-family: "Cormorant Upright", serif;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 23px;
+          text-transform: none;
+
+        }
+      }
+    }
+  }
   &.scrolled {
     display: none;
   }

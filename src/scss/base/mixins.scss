@@ -184,5 +184,14 @@
   line-height: 2em;
   font-weight: 400;
   letter-spacing: .2em;
-
+}
+@mixin bag-items-button{
+  color: $menu-color;
+  border: 1px solid white;
+  line-height: 2em;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: Lato,sans-serif;
+  padding: 8px 24px;
+  font-size: 10px;
 }
