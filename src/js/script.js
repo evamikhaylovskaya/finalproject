@@ -311,7 +311,9 @@ const products = [
 
 //bag items delete selected product
 $(document).on('click', '.bag-items .close-icon', function () {
-    $('.item').remove();
+    const $this = $(this);
+    $this.closest('.item').remove();
+    removeItemCart($this.data('id'));
 });
 
 //menu

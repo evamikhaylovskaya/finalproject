@@ -227,7 +227,7 @@
             cursor: pointer;
             margin: 0 10px;
 
-            & > svg {
+            & > svg, & > * > svg {
               width: 20px;
               display: block;
               &.shopping-bag-icon{
@@ -236,7 +236,7 @@
             }
 
 
-            &:hover > svg {
+            &:hover > svg, &:hover > * > svg {
               fill: #DD5656;
             }
 

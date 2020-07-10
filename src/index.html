@@ -55,6 +55,17 @@
         return item;
     }
 
+    const removeItemCart = (id) => {
+        let item;
+        cart.forEach((cartItem, index) => {
+            console.dir(cartItem);
+            if (cartItem.id === id) {
+                delete cart[index];
+                console.dir('deleted', id, index)
+            }
+        });
+    }
+
     const getTotal = () => {
         let total = 0;
         cart.map((item) => {
@@ -99,7 +110,7 @@
         return (<div key={key} className="item">
             <img src={itemProduct.img} alt=""/>
             <div className="item-description">
-                <ion-icon class="close-icon" name="close-outline"/>
+                <ion-icon class="close-icon" data-id={item.id} name="close-outline"/>
                 <div className="item__title">{itemProduct.title}</div>
                 <div className="quantity-price">
                     <div className="item__quantity">{item.quantity} x</div>
@@ -1133,36 +1144,36 @@
     <div class="inner-item">TOP</div>
 </div>
 
-<!--<div class="pop-up-window">-->
-<!--    <div class="content-box">-->
-<!--        <svg class="close-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"-->
-<!--             x="0px" y="0px"-->
-<!--             width="29px" height="29px" viewBox="0 0 29 29" enable-background="new 0 0 29 29" xml:space="preserve">-->
-<!--                <line fill="none" stroke="currentColor" stroke-miterlimit="10" x1="3.893" y1="3.895" x2="25.105"-->
-<!--                      y2="25.107"></line>-->
-<!--            <line fill="none" stroke="currentColor" stroke-miterlimit="10" x1="3.893" y1="3.895" x2="25.105"-->
-<!--                  y2="25.107"></line>-->
-<!--            <line fill="none" stroke="currentColor" stroke-miterlimit="10" x1="3.894" y1="25.106" x2="25.107"-->
-<!--                  y2="3.894"></line>-->
-<!--            <line fill="none" stroke="currentColor" stroke-miterlimit="10" x1="3.894" y1="25.106" x2="25.107"-->
-<!--                  y2="3.894"></line>-->
-<!--        </svg>-->
-<!--        <div class="title__wrapper">-->
-<!--            <div class="shadow-title">subscribe</div>-->
-<!--            <div class="main-title">STAY IN TOUCH</div>-->
-<!--        </div>-->
-<!--        <form action="">-->
-<!--            <input type="email" placeholder="E-mail address">-->
-<!--            <div class="error"></div>-->
-<!--            <button class="submit-button" type="submit">SEND</button>-->
-<!--        </form>-->
-<!--        <div class="helper-text">*At vero eos et accusamus et iusto odio dignissimos</div>-->
-<!--        <div class="checkbox">-->
-<!--            <input type="checkbox">-->
-<!--            <div class="radio-description">Prevent This Pop-up</div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
+<div class="pop-up-window">
+    <div class="content-box">
+        <svg class="close-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+             x="0px" y="0px"
+             width="29px" height="29px" viewBox="0 0 29 29" enable-background="new 0 0 29 29" xml:space="preserve">
+                <line fill="none" stroke="currentColor" stroke-miterlimit="10" x1="3.893" y1="3.895" x2="25.105"
+                      y2="25.107"></line>
+            <line fill="none" stroke="currentColor" stroke-miterlimit="10" x1="3.893" y1="3.895" x2="25.105"
+                  y2="25.107"></line>
+            <line fill="none" stroke="currentColor" stroke-miterlimit="10" x1="3.894" y1="25.106" x2="25.107"
+                  y2="3.894"></line>
+            <line fill="none" stroke="currentColor" stroke-miterlimit="10" x1="3.894" y1="25.106" x2="25.107"
+                  y2="3.894"></line>
+        </svg>
+        <div class="title__wrapper">
+            <div class="shadow-title">subscribe</div>
+            <div class="main-title">STAY IN TOUCH</div>
+        </div>
+        <form action="">
+            <input type="email" placeholder="E-mail address">
+            <div class="error"></div>
+            <button class="submit-button" type="submit">SEND</button>
+        </form>
+        <div class="helper-text">*At vero eos et accusamus et iusto odio dignissimos</div>
+        <div class="checkbox">
+            <input type="checkbox">
+            <div class="radio-description">Prevent This Pop-up</div>
+        </div>
+    </div>
+</div>
 
 
 

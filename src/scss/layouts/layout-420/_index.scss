@@ -17,6 +17,8 @@
     .collection__wrapper {
       .product {
         .grid-container {
+          grid-template-columns: repeat(1, auto);
+          column-gap: 0;
           .item-product {
             column-gap: 0;
           }
