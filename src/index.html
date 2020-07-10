@@ -18,7 +18,9 @@
 
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-
+    <script src="js/react.development.js"></script>
+    <script src="js/react-dom.development.js"></script>
+    <script src="js/babel.js"></script>
     <!-- Favicons -->
     <link rel="shortcut icon" href="favicon.ico">
     <!-- javascript -->
@@ -37,6 +39,115 @@
 
 </head>
 <body>
+<script>
+
+</script>
+<div id="root"></div>
+<script type="text/babel">
+
+    const getItemProduct = (id) => {
+        let item;
+        products.forEach(itemProduct => {
+            if (itemProduct.id === id) {
+                item = itemProduct;
+            }
+        });
+        return item;
+    }
+
+    const getTotal = () => {
+        let total = 0;
+        cart.map((item) => {
+            let itemProduct = getItemProduct(item.id);
+            total += parseInt(itemProduct.price) * item.quantity;
+        });
+        return total;
+    };
+
+    const getTotalQuantity = () => {
+        let totalQuantity = 0;
+        cart.map((item) => {
+            totalQuantity += item.quantity;
+        });
+
+        return totalQuantity;
+    };
+
+    let cart = [
+        {
+            id: 1,
+            quantity: 2,
+        }, {
+            id: 2,
+            quantity: 1,
+        }, {
+            id: 3,
+            quantity: 3,
+        }, {
+            id: 7,
+            quantity: 2,
+        },
+
+    ];
+
+    const cartItem = document.getElementById("cartItem");
+    const quantityOfProducts = document.getElementById("quantity-of-products");
+
+    const listItems = cart.map((item, key) => {
+        let itemProduct = getItemProduct(item.id);
+        console.dir(itemProduct)
+        return (<div key={key} className="item">
+            <img src={itemProduct.img} alt=""/>
+            <div className="item-description">
+                <ion-icon class="close-icon" name="close-outline"/>
+                <div className="item__title">{itemProduct.title}</div>
+                <div className="quantity-price">
+                    <div className="item__quantity">{item.quantity} x</div>
+                    <div className="item__price">${itemProduct.price}</div>
+                </div>
+            </div>
+        </div>)
+    });
+
+    const buttonHolder = <React.Fragment>
+        <a itemProp="url" href="https://biagiotti.qodeinteractive.com/cart/"
+           className="mkdf-sc-dropdown-button mkdf-cart">
+            View Cart
+        </a>
+        <a itemProp="url" href="https://biagiotti.qodeinteractive.com/checkout/"
+           className="mkdf-sc-dropdown-button mkdf-checkout">
+            Check out
+        </a>
+    </React.Fragment>;
+
+ const subTotal = <React.Fragment>
+
+     <div className="total">
+         TOTAL:
+     </div>
+     <div className="total-price">
+         ${getTotal()}
+     </div>
+    </React.Fragment>;
+
+    ReactDOM.render(
+        [
+            <div className="grid-container">{listItems}</div>,
+            <div className="subtotal">{getTotalQuantity() ? subTotal : ''}</div>,
+            <div className="button-holder">{getTotalQuantity() ? buttonHolder : 'No products in the cart'}</div>
+        ],
+        cartItem
+    );
+
+    ReactDOM.render(
+        [
+            <div>{getTotalQuantity()}</div>
+        ],
+        quantityOfProducts
+    );
+
+
+</script>
 <div class="top-menu">
     <div class="email">
         biagiottitheme@gmail.com
@@ -235,11 +346,13 @@
                             <use xlink:href="img/search.svg#search"/>
                         </svg>
                     </div>
-                    <div class="menu__icon">
+
+                    <div class="menu__icon shopping-bag-menu-item">
                         <svg class="shopping-bag-icon" viewBox="-35 0 512 512.00102" xmlns="http://www.w3.org/2000/svg">
                             <use xlink:href="img/shopping-bag.svg#shopping-bag"/>
                         </svg>
-                        <span class="quantity-of-product">88</span>
+                        <span class="quantity-of-product" id="quantity-of-products"></span>
+
                     </div>
                 </div>
                 <div id="burger-menu" class="burger-menu">
@@ -254,6 +367,7 @@
             </div>
 
         </div>
+
         <ul class="mobile-menu">
             <li class="menu__item"><a class="menu__link" href="#">home</a>
                 <ion-icon class="submenu-arrow" name="chevron-forward-outline"></ion-icon>
@@ -324,7 +438,11 @@
                 </svg>
         </form>
     </div>
-
+    <div class="bag-section">
+        <div class="content-box">
+            <div class="bag-items" id="cartItem"></div>
+        </div>
+    </div>
 </header>
 
 <div class="section__first">
@@ -1045,77 +1163,6 @@
 <!--        </div>-->
 <!--    </div>-->
 <!--</div>-->
-
-<div class="bag-section">
-    <div class="content-box">
-        <div class="bag-items">
-            <div class="grid-container">
-                <div class="item">
-                    <img src="img/new-featured-home-3-img-2.jpg" alt="">
-                    <div class="item-description">
-                        <ion-icon class="close-icon" name="close-outline"></ion-icon>
-                        <div class="item__title">Balm</div>
-                        <div class="quantity-price">
-                            <div class="item__quantity">1 x</div>
-                            <div class="item__price">$25.00</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="img/new-featured-home-3-img-1.jpg" alt="">
-                    <div class="item-description">
-                        <ion-icon class="close-icon" name="close-outline"></ion-icon>
-                        <div class="item__title">Cream Z</div>
-                        <div class="quantity-price">
-                            <div class="item__quantity">1 x</div>
-                            <div class="item__price">$25.00</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="img/new-featured-home-3-img-3.jpg" alt="">
-                    <div class="item-description">
-                        <ion-icon class="close-icon" name="close-outline"></ion-icon>
-                        <div class="item__title">Easy Spray</div>
-                        <div class="quantity-price">
-                            <div class="item__quantity">1 x</div>
-                            <div class="item__price">$25.00</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="img/new-featured-home-3-img-4.jpg" alt="">
-                    <div class="item-description">
-                        <ion-icon class="close-icon" name="close-outline"></ion-icon>
-                        <div class="item__title">Tint Balm</div>
-                        <div class="quantity-price">
-                            <div class="item__quantity">1 x</div>
-                            <div class="item__price">$25.00</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="subtotal">
-                <div class="total">
-                    TOTAL:
-                </div>
-                <div class="total-price">
-                    $71.00
-                </div>
-            </div>
-            <div class="button-holder">
-                <a itemprop="url" href="https://biagiotti.qodeinteractive.com/cart/"
-                   class="mkdf-sc-dropdown-button mkdf-cart">
-                    View Cart
-                </a>
-                <a itemprop="url" href="https://biagiotti.qodeinteractive.com/checkout/"
-                   class="mkdf-sc-dropdown-button mkdf-checkout">
-                    Check out
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
 
 
 

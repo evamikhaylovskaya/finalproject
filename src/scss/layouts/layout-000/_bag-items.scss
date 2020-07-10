@@ -5,7 +5,10 @@
   transition-timing-function: cubic-bezier(0.66, 0.14, 0.58, 1);
   transition-delay: 0.1s;
   max-height: 100vh;
-
+  position: absolute;
+  top: 90px;
+  right: 0px;
+  z-index: 999;
 display: none;
   .content-box {
     width: 300px;
@@ -21,44 +24,43 @@ display: none;
       vertical-align: middle;
       color: $menu-color;
 
-
-
-      .close-icon {
-        color: $white;
-        margin-left: auto;
-        font-size: 20px;
-        display: flex;
-        line-height: 1;
-      }
-
-
         .grid-container {
           display: grid;
           grid-template-columns: 1fr;
           column-gap: 10px;
           row-gap: 30px;
+
           .item {
             display: grid;
             grid-template-columns: 1fr 1fr;
-          img {
-            max-width: 70px;
-          }
-        }
 
-        .item-description {
-          font-style: italic;
-          font-size: 22px;
-          font-family: "Cormorant Upright", sans-serif;
+            img {
+              max-width: 70px;
+            }
 
-          .quantity-price {
-            display: flex;
+            .item-description, .item__title {
+              font-style: italic;
+              font-size: 22px;
+              font-family: "Cormorant Upright", sans-serif;
+              text-transform: capitalize;
+              .close-icon {
+                color: $white;
+                margin-left: auto;
+                font-size: 20px;
+                display: flex;
+                line-height: 1;
+              }
 
-            .item__price {
-              margin: 0 10px;
+              .quantity-price {
+                display: flex;
+
+                .item__price {
+                  margin: 0 10px;
+                }
+              }
             }
           }
         }
-      }
       .subtotal{
         display: grid;
         grid-template-columns: 1fr 1fr;

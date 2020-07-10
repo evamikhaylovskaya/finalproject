@@ -206,7 +206,7 @@ $(document).on('click', '.item-product .show-item', function () {
     const itemProduct = $(this).closest('.item-product');
     const id = itemProduct.data('id');
 
-    productsSectionOne.forEach(itemProduct => {
+    products.forEach(itemProduct => {
         if (itemProduct.id === id) {
             const itemProductHtml = $('#item-product').html();
             const $itemProduct = $(itemProductHtml);
@@ -214,7 +214,7 @@ $(document).on('click', '.item-product .show-item', function () {
 
             $itemProduct.find('.first-col img').attr('src', itemProduct.img);
             $itemProduct.find('.product__title').html(itemProduct.title);
-            $itemProduct.find('.product__price').html(itemProduct.price);
+            $itemProduct.find('.product__price').html('$' + itemProduct.price);
             $itemProduct.find('.product__description').html(itemProduct.description);
 
             return null;
@@ -223,22 +223,22 @@ $(document).on('click', '.item-product .show-item', function () {
 });
 
 //
-const productsSectionOne = [
+const products = [
     {
         id: 1,
         img: '/img/shop-img-29-600x803.jpg',
         title: 'CREME Z',
         description: 'An dico accommodare ius, porro mnesarchum pro in. Cetero fierent urbanitas eam id, sed movet voluptua ut. Eu agam malorum nec. Eu has vide putent, dico option nominati no eam. Ea erant impetus consequuntur eos, velit congue vidisse eos ne. Est dicat doming te, inani eruditi iudicabit mei ea. Sed id prima soluta legimus.',
-        price: '$46.00',
+        price: '46.00',
         type: 'Body Oil',
         stars: 5,
 
     }, {
         id: 2,
         img: '/img/shop-img-30-600x803.jpg',
-        title: 'Balm',
+        title: 'BALM',
         description: 'An dico accommodare ius, porro mnesarchum pro in. Cetero fierent urbanitas eam id, sed movet voluptua ut. Eu agam malorum nec. Eu has vide putent, dico option nominati no eam. Ea erant impetus consequuntur eos, velit congue vidisse eos ne. Est dicat doming te, inani eruditi iudicabit mei ea. Sed id prima soluta legimus.',
-        price: '$25.00',
+        price: '25.00',
         type: 'Body Oil',
         stars: 5,
 
@@ -247,7 +247,7 @@ const productsSectionOne = [
         img: '/img/shop-img-31-600x803.jpg',
         title: 'EASY SPRAY',
         description: 'An dico accommodare ius, porro mnesarchum pro in. Cetero fierent urbanitas eam id, sed movet voluptua ut. Eu agam malorum nec. Eu has vide putent, dico option nominati no eam. Ea erant impetus consequuntur eos, velit congue vidisse eos ne. Est dicat doming te, inani eruditi iudicabit mei ea. Sed id prima soluta legimus.',
-        price: '$28.00',
+        price: '28.00',
         type: 'Body Oil',
         stars: 5,
 
@@ -256,7 +256,7 @@ const productsSectionOne = [
         img: '/img/shop-img-63-600x803.jpg',
         title: 'TINT BALM',
         description: 'An dico accommodare ius, porro mnesarchum pro in. Cetero fierent urbanitas eam id, sed movet voluptua ut. Eu agam malorum nec. Eu has vide putent, dico option nominati no eam. Ea erant impetus consequuntur eos, velit congue vidisse eos ne. Est dicat doming te, inani eruditi iudicabit mei ea. Sed id prima soluta legimus.',
-        price: '$25.00',
+        price: '25.00',
         type: 'Body Oil',
         stars: 5,
 
@@ -265,7 +265,7 @@ const productsSectionOne = [
         img: '/img/shop-img-18-600x803.jpg',
         title: 'A DREAM',
         description: 'An dico accommodare ius, porro mnesarchum pro in. Cetero fierent urbanitas eam id, sed movet voluptua ut. Eu agam malorum nec. Eu has vide putent, dico option nominati no eam. Ea erant impetus consequuntur eos, velit congue vidisse eos ne. Est dicat doming te, inani eruditi iudicabit mei ea. Sed id prima soluta legimus.',
-        price: '$32.00',
+        price: '32.00',
         type: 'Body Oil',
         stars: 5,
 
@@ -274,7 +274,7 @@ const productsSectionOne = [
         img: '/img/shop-img-32-600x803.jpg',
         title: 'LOTION K',
         description: 'An dico accommodare ius, porro mnesarchum pro in. Cetero fierent urbanitas eam id, sed movet voluptua ut. Eu agam malorum nec. Eu has vide putent, dico option nominati no eam. Ea erant impetus consequuntur eos, velit congue vidisse eos ne. Est dicat doming te, inani eruditi iudicabit mei ea. Sed id prima soluta legimus.',
-        price: '$52.00',
+        price: '52.00',
         type: 'Body Oil',
         stars: 5,
 
@@ -283,7 +283,7 @@ const productsSectionOne = [
         img: '/img/shop-img-33-600x803.jpg',
         title: 'DROPS FOR EYES',
         description: 'An dico accommodare ius, porro mnesarchum pro in. Cetero fierent urbanitas eam id, sed movet voluptua ut. Eu agam malorum nec. Eu has vide putent, dico option nominati no eam. Ea erant impetus consequuntur eos, velit congue vidisse eos ne. Est dicat doming te, inani eruditi iudicabit mei ea. Sed id prima soluta legimus.',
-        price: '$18.00',
+        price: '18.00',
         type: 'Body Oil',
         stars: 5,
 
@@ -292,7 +292,7 @@ const productsSectionOne = [
         img: '/img/shop-img-34-600x803.jpg',
         title: 'LIPSTICK MAT',
         description: 'An dico accommodare ius, porro mnesarchum pro in. Cetero fierent urbanitas eam id, sed movet voluptua ut. Eu agam malorum nec. Eu has vide putent, dico option nominati no eam. Ea erant impetus consequuntur eos, velit congue vidisse eos ne. Est dicat doming te, inani eruditi iudicabit mei ea. Sed id prima soluta legimus.',
-        price: '$25.00',
+        price: '25.00',
         type: 'Body Oil',
         stars: 5,
 
@@ -301,7 +301,7 @@ const productsSectionOne = [
         img: '/img/shop-img-18-600x803.jpg',
         title: 'S DREAM',
         description: 'An dico accommodare ius, porro mnesarchum pro in. Cetero fierent urbanitas eam id, sed movet voluptua ut. Eu agam malorum nec. Eu has vide putent, dico option nominati no eam. Ea erant impetus consequuntur eos, velit congue vidisse eos ne. Est dicat doming te, inani eruditi iudicabit mei ea. Sed id prima soluta legimus.',
-        price: '$32.00',
+        price: '32.00',
         type: 'Body Oil',
         stars: 5,
 
@@ -339,6 +339,22 @@ $fullWidthMenu.hover(function (e) {
     }, 50));
 });
 
+//hover on cart
+$('.shopping-bag-menu-item, .bag-section').hover(function (e) {
+    const $bagSection = $('.bag-section');
+    clearTimeout($bagSection.data('clearTimeout'));
+    $bagSection.data('clearTimeout', setTimeout(function () {
+        $bagSection.slideDown();
+
+    }, 150));
+}, function () {
+    const $bagSection = $('.bag-section');
+    clearTimeout($bagSection.data('clearTimeout'));
+    $bagSection.data('clearTimeout', setTimeout(function () {
+        $bagSection.slideUp();
+    }, 150));
+});
+
 //hover on child menu item
 $('.full-width-menu-item').hover(function (e) {
     const $this = $(this);
@@ -366,9 +382,6 @@ $(document).on('click', 'header .mobile-menu .menu__item', function (e) {
     $this.toggleClass('open').find('ul').slideToggle();
 });
 
-//  cart/bag shop list
 
-$('header .menu__icon .shopping-bag-icon').hover(function () {
-const $this = $(this);
-    $(' .bag-section').slideDown();
-});
+
+
