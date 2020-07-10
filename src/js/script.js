@@ -324,10 +324,11 @@ $fullWidthMenu.each(function (id, menuItem) {
     $menuItem.data('id', uuid);
     $item.attr('id', uuid);
 });
-
+//hover on parent menu item
 $fullWidthMenu.hover(function (e) {
     const $this = $(this);
     const $item = $('#' + $this.data('id'));
+    clearTimeout($item.data('clearTimeout'));
     $item.slideDown()
 }, function () {
     const $this = $(this);
@@ -335,9 +336,10 @@ $fullWidthMenu.hover(function (e) {
     clearTimeout($item.data('clearTimeout'));
     $item.data('clearTimeout', setTimeout(function () {
         $item.slideUp();
-    }, 150));
+    }, 50));
 });
 
+//hover on child menu item
 $('.full-width-menu-item').hover(function (e) {
     const $this = $(this);
     clearTimeout($this.data('clearTimeout'));
@@ -348,7 +350,7 @@ $('.full-width-menu-item').hover(function (e) {
     clearTimeout($this.data('clearTimeout'));
     $this.data('clearTimeout', setTimeout(function () {
         $this.slideUp();
-    }, 150));
+    }, 50));
 });
 
 
